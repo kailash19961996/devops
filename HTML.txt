@@ -1,0 +1,3031 @@
+Day-1
+
+
+Software
+---------
+Front--End Technologies(client-side Language)
+-------------------------
+1)HTML
+2)CSS
+3)JS
+4)Angular Js
+5)Jqurey
+
+
+Back--End Technologies(Server-side Programming Language)
+------------------------
+1)python
+2)Java
+3)C#.net
+4)php
+5)Ruby
+
+
+Database
+----------
+sql
+mysql
+
+Oracle
+Postgre SQL
+
+MongoDB
+MicroSoft,..
+
+---------------------------------------------------------------------------
+Front--End Technologies(client-side Language)
+-------------------------
+HTML
+-----
+
+Hyper Text Markup Language
+
+
+Hyper--->link
+
+Text---->data
+
+Markup--->design
+
+Language--->communicate
+
+
+What is HTML?
+-----------------
+Hyper Text--->text with in text
+
+Markup Language--->It is used to design  different layout and formatting to a text
+
+TEXT
+
+Usage?
+--------
+---->used to client side Storage
+---->create webpage and website using HTML tags
+---->Data Entry Document creation
+
+HTML History
+--------------
+Devloper---->Tim- Berners-Lee
+
+company-----CERN
+
+year-----1980's
+
+
+HTML Version
+----------------
+HTML----1991
+
+HTML 2.0--->1995
+
+HTML 3.0-->1997
+
+HTML 4.0--->1999
+
+XHTML---->2000
+
+HTML5--->2014[Latest Version]
+
+HTML Tag
+---------
+<>--->opening tag(or)starting tag (or)standalone tag
+
+</>--->closing tag(or) container tag
+
+
+syntax:
+---------
+<tag>content</tag>
+
+
+HTML Document
+-----------------
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  
+  <body>
+    Welcome to Webpage        
+  </body>
+</html>
+EX:
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mypage</title>
+  </head>
+  
+  <body>
+    Welcome to Webpage
+  </body>
+</html>
+
+
+
+How to set background color & image in HTML body?
+------------------------------------------
+set background color
+----------------------
+syntax:
+--------
+<body bgcolor="value">
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mypage</title>
+  </head>
+  
+  <body bgcolor="F08080">
+    Welcome to Webpage
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mypage</title>
+  </head>
+  
+  <body bgcolor="yellow">
+    Welcome to Webpage
+  </body>
+</html>
+
+
+
+set background image
+-----------------------
+syntax:
+---------
+<body background="value">
+
+value--->imagename.filetype
+
+filetype--->.gif,.png,.jpg
+
+
+EX:
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mypage</title>
+  </head>
+  
+  <body background="3.gif">
+    Welcome to Webpage
+  </body>
+</html>
+
+
+--------------------------------------------
+Formatting Tag
+-----------------
+1)Bold
+---------
+syntax:
+-------
+<b>....</b>
+
+2)Italic tag
+---------------
+syntax:
+--------
+<i>...</i>
+
+3)underline
+--------------
+syntax:
+--------
+<u>...</u>
+
+
+4)mark tag
+------------
+syntax:
+----------
+<mark>....</mark>
+
+
+5)strikethrough
+-------------------
+syntax:
+-------
+<strike>....</strike>
+
+6)typewriting (or)monospace 
+----------------------------
+
+syntax:
+--------
+<tt>....</tt>
+
+7)small
+-----------
+syntax:
+---------
+<small>....</small>
+
+
+8)large
+--------
+
+syntax:
+-------
+<big>...</big>
+
+
+9)subscript(base)
+---------------
+syntax:
+--------
+<sub>...</sub>
+
+
+10)superscript
+----------------
+syntax:
+-------
+<sup>....</sup>
+
+11)insert
+---------
+
+syntax:
+--------
+<ins>...</ins>
+
+12)del
+------
+
+syntax:
+-------
+<del>...</del>
+
+
+EX:
+---<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mypage</title>
+  </head>
+  
+  <body>
+     <b>This is Bold Tag</b><br><br>
+     <i>This is Italic tag</i><br><br>
+     <u>This is Underline Tag</u><br><br>
+     <b><i><u>This is using Multiple Properties</u></i></b><br><br>
+     <b>HTML is used for creating <mark>web</mark> page</b><br><br>
+     <i>My favourite color is <strike>yellow</strike> red color<br><br>
+     <tt>This is Monospace Font</tt><br><br>
+     <small>This is Small Text</small><br><br>
+     <big>This is large Text</big><br><br>
+     <b>H<sub>2</sub>0 is a Water Formula</b><br><br>
+     <b>(a+b)<sup>2</sup> is a Maths Formula</b><br><br>
+   HTML is used to <ins>Web</ins> Technologies
+   This is <del>Bold</del> Italic Text
+  </body>
+</html>
+--------------------------------------------------------------
+
+Basic Tags
+---------
+I.Heading tag
+------------
+<h1>...</h1>---->largest Heading
+<h2>....</h2>
+<h3>..</h3>
+<h4>...</h4>
+<h5>..</h5>
+<h6>...</h6>
+
+
+<html>
+  <head>
+  </head>
+  <body>
+   <h1>This is Heading1</h1>
+   <h2>This is Heading2</h2>
+   <h3>This is Heading2</h3>
+   <h4>This is Heading4</h4>
+   <h5>This is Heading5</h5>
+   <h6>This is Heading6</h6>
+  </body>
+</html>
+
+II.paragraph tag
+------------------
+syntax
+----------
+<p>....</p>
+
+
+EX:
+---
+<html>
+  <head>
+  </head>
+  <body>
+<font size="40px" color="red">
+   <p align="right">Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.</p>
+</font>
+
+<font size="40px" color="blue">
+<p align="left">To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.</p>
+</font>
+
+<font size="40px" color="green">
+<p align="justify">
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+</p>
+</font>
+
+<font size="40px" color="FF00FF">
+<p align="center">
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+</p>
+</font>
+  </body>
+</html>
+
+III.font-tag
+---------
+syntax:
+--------
+<font attribute="value">
+</font>
+
+
+EX:
+----
+attribute-->size,color,...
+----------------------------------------------
+IV.standalone tag
+-----------------
+--->There is no ending tag in standalone tag
+
+1)break(<br>)
+2)Horizontal tag(<hr>)
+
+
+1)break(<br>)
+-------------------
+--->it is used to break the line
+
+syntax:
+---------
+<br> (or) <br/>
+
+EX:
+---
+<html>
+  <head>
+  </head>
+  <body>
+
+Save time in Word with new buttons that show up where you need them.<br><br>To change the way a picture fits in your document, click it and a button for layout options appears next to it.<br><br> When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+
+
+  </body>
+</html>
+-------------------------------------------------------------
+horizontal rule
+----------------
+it is used to separate the content
+
+syntax:
+---------
+<hr> (or) <hr/>
+
+
+<html>
+  <head>
+  </head>
+  <body>
+
+ <h1>Save the Nature</h1><hr>
+Save time in Word with new buttons that show up where you need them.<br><br>To change the way a picture fits in your document, click it and a button for layout options appears next to it.<br><br/> When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+
+
+  </body>
+</html>
+-----------------------------------------------------------------------
+V.center tag
+-------------
+-->it is used to fit the content in center of the page
+
+syntax:
+---------
+<center>.....</center>
+
+<html>
+  <head>
+  </head>
+  <body>
+<center>
+ <h1>Save the Nature</h1><hr>
+Save time in Word with new buttons that show up where you need them.<br><br>To change the way a picture fits in your document, click it and a button for layout options appears next to it.<br><br/> When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+</center>
+
+  </body>
+</html>
+----------------------------------------------------------------
+Non-Breaking spaces
+---------------------
+syntax:
+----------
+&nbsp;
+
+EX:
+----
+<html>
+  <head>
+  </head>
+  <body>
+<center>
+ <h1>Save&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;&nbsp;&nbsp;&nbsp;Nature</h1><hr>
+Save time in Word with new buttons that show up where you need them.<br><br>To change the way a picture fits in your document, click it and a button for layout options appears next to it.<br><br/> When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+</center>
+
+  </body>
+</html>
+
+comments line
+--------------
+--->it is used to user identification
+
+types:
+--------
+1)single-line Comment
+2)multiline Comment
+
+I.1)single-line Comment
+--------------------------
+
+syntax:
+--------
+<!-----write text here------->
+
+
+
+
+EX:
+---
+<!----- <h1>Save the Nature</h1><hr> ---->
+
+
+
+2)multiline Comment
+----------------------
+syntax:
+---------
+<!----
+
+-----
+-------
+--------
+----->
+
+EX:
+---
+  <body>
+
+
+   <h1>Save the Nature</h1><hr> 
+<!----- 
+Save time in Word with new buttons that show up where you need them.<br><br>To change the way a picture fits in your document, click it and a button for layout options appears next to it.<br><br/> When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+----->
+
+  </body>
+</html>
+
+************************************************************************************************************************************************************
+Day-2
+
+HTML style
+------------
+
+HTML Style is used to change or add the style in HTML Elements
+
+
+syntax:
+-----------
+<tagname style="property:value">content</tagname>
+
+
+I.text color
+-------------
+syntax:
+--------
+<tagname style="color:value">content</tagname>
+
+EX:
+---
+<html>
+  <body>
+  
+   <p style="color:blue">This is paragraph tag</p>
+   <p style="color:red">This is Red Color</p>
+  </body>
+</html>
+
+
+II.background-color
+-----------------------
+syntax:
+-------
+<tagname style="background-color:value">...</tagname>
+
+EX:
+---
+ <body style="background-color:silver">
+
+EX:
+----
+<html>
+  <body bgcolor="yellow">
+  
+   <p style="color:blue;background-color:skyblue;">Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.</p>
+   <p style="color:red">This is Red Color</p>
+  </body>
+</html>
+
+
+III.font-size
+---------------
+syntax:
+--------
+<tagname style="font-size:value">....</tagname>
+
+
+value--->%,px
+
+
+EX:
+----
+<html>
+  <body bgcolor="yellow">
+  
+   <p style="color:blue;background-color:skyblue;font-size:150%">Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.</p>
+   <p style="color:red">This is Red Color</p>
+  </body>
+</html>
+
+
+font-style
+-------------
+
+syntax:
+--------
+<tagname style="font-family:value">....</tagname>
+
+EX:
+----
+<html>
+  <body bgcolor="yellow">
+  
+   <p style="color:blue;font-family:Algerian">Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.</p>
+   <p style="color:red">This is Red Color</p>
+  </body>
+</html>
+--------------------------------------------------------------
+text-align
+----------
+value:left,right,center
+
+syntax:
+---------
+<tagname style="text-align:value">content</tagname>
+
+
+EX:
+---
+ <h1 style="color:yellow;text-align:right">This is Heading tag</h1>
+-----------------------------------------------------------------------------
+List tag
+----------
+--->it is used to diplay the information in list of order
+
+type:
+----------
+1)orderlist(or)Number List
+2)unorderlist (or)Bullet list
+3)Definition List (or)Description List
+
+1)orderlist(or)Number List
+---------------------------
+---->It display the values in Number Format
+---->It starts with <ol>
+--->Each list item starts with <li> tag
+
+
+types:
+-------
+1)Numberic value(1,2,3,4,..)
+2)capital Roman Letter(I,II,III,..)
+3)small Roman Letter(i,ii,iii,....)
+4)Capital Alphabet(A,B,C,...)
+5)small  Alphabet(a,b,c,,,...)
+
+
+syntax:
+--------
+<ol>
+  <li>
+  </li>
+</ol>
+
+
+I.Number List
+-------------
+--->Default List
+--->It display the values in number fomat
+
+EX:
+---
+<html>
+  <body>
+  <h1 style="color:purple;text-align:center">Front-End Technologies</h1>
+   <ol>
+     <li>HTML</li>
+     <li>CSS</li>
+    <li>JS</li>
+    <li>JQ</li>
+   </ol>
+  </body>
+</html>
+
+
+II.capital-Roman letter
+--------------------------
+<html>
+  <body>
+  <h1 style="color:purple;text-align:center">Front-End Technologies</h1>
+   <ol type="I">
+     <li>HTML</li>
+     <li>CSS</li>
+    <li>JS</li>
+    <li>JQ</li>
+   </ol>
+  </body>
+</html>
+
+
+III.small roman letter
+----------------------
+<html>
+  <body>
+  <h1 style="color:purple;text-align:center">Front-End Technologies</h1>
+   <ol type="i">
+     <li>HTML</li>
+     <li>CSS</li>
+    <li>JS</li>
+    <li>JQ</li>
+   </ol>
+  </body>
+</html>
+
+
+IV.Capital Alphabet
+---------------------
+<html>
+  <body>
+  <h1 style="color:purple;text-align:center">Front-End Technologies</h1>
+   <ol type="A">
+     <li>HTML</li>
+     <li>CSS</li>
+    <li>JS</li>
+    <li>JQ</li>
+   </ol>
+  </body>
+</html>
+
+
+V.small Alphabet
+-------------------
+<html>
+  <body>
+  <h1 style="color:purple;text-align:center">Front-End Technologies</h1>
+   <ol type="a">
+     <li>HTML</li>
+     <li>CSS</li>
+    <li>JS</li>
+    <li>JQ</li>
+   </ol>
+  </body>
+</html>
+
+
+start
+-----
+<html>
+  <body>
+  <h1 style="color:purple;text-align:center">Front-End Technologies</h1>
+   <ol type="1" start=3>
+     <li>HTML</li>
+     <li>CSS</li>
+    <li>JS</li>
+    <li>JQ</li>
+   </ol>
+  </body>
+</html>
+--------------------------------------------------------------------------
+unorder List
+------------
+---->It starts with <ul>
+--->Each list item starts with <li> tag
+
+
+types:
+------
+1)disc(default)
+2)circle
+3)square
+
+I.disc(default)
+-----------------
+<html>
+  <body>
+  <h1 style="color:purple;text-align:center">Back-End Technologies</h1>
+   <ul>
+     <li>C</li>
+     <li>C++</li>
+    <li>Java</li>
+    <li>Python</li>
+    <li>C#.net</li>
+    <li>Ruby</li>
+   </ul>
+  </body>
+</html>
+
+------------------------------------------------------------
+II.circle
+----------
+<html>
+  <body>
+  <h1 style="color:purple;text-align:center">Back-End Technologies</h1>
+   <ul type="circle">
+     <li>C</li>
+     <li>C++</li>
+    <li>Java</li>
+    <li>Python</li>
+    <li>C#.net</li>
+    <li>Ruby</li>
+   </ul>
+  </body>
+</html>
+-------------------------------------------------------------------------
+III.square
+-----------
+<html>
+  <body>
+  <h1 style="color:purple;text-align:center">Back-End Technologies</h1>
+   <ul type="square">
+     <li>C</li>
+     <li>C++</li>
+    <li>Java</li>
+    <li>Python</li>
+    <li>C#.net</li>
+    <li>Ruby</li>
+   </ul>
+  </body>
+</html>
+----------------------------------------------------------------
+Description List(or)Definition List
+------------------------------------
+types:
+--------
+<d1> tag---->description tag
+<dt>---->data item
+<dd>---->Data Definition
+
+<html>
+  <body>
+  <h1 style="color:purple;text-align:center">Front-End Technologies</h1>
+   <dl>
+
+    <dt>HTML</dt>
+    <dd>Hyper Text Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheet</dd>
+    <dt>JS</dt>
+    <dd>Java Script</dd>
+   <dl>
+  </body>
+</html>
+-----------------------------------------------------------------
+Nested List
+------------
+A list Created by another list is called Nested List
+
+<html>
+  <body>
+  <ol>
+    <li>Coffee</li>
+    <li>Tea
+      <ul>
+        <li>Lemon Tea</li>
+        <li>Black Tea</li>
+        <li>Green Tea</li>
+      </ul>
+     </li>
+   <li>Milk</li>
+  </ol>
+  </body>
+</html>
+--------------------------------------------------------------
+
+Day-3
+
+Anchor tag
+------------
+--->Anchor tag defines a hyperlink which is used to link one page to another page
+
+syntax:
+--------
+<a  href=".......">content</a>
+
+
+href--->hyper Reference
+--------------------------
+--->It defined the address of the file
+
+
+EX:
+---
+<html>
+  <body>
+   <a href="red.html">Red Page</a><br>
+   <a href="green.html">Green Page</a><br>
+  </body>
+</html>
+----------------------------------------------------------------
+target attribute
+------------------
+---->It helps this attribute open a link in new tab
+
+target="_blank"
+
+
+Anchor tag link colors
+------------------------
+1)unvisited--->blue
+2)Visited link--->purple
+3)Active link--->red
+
+---------------------------------------------------------
+name
+-------
+syntax:
+-----------
+<a name="given any name">
+
+
+EX:
+----
+<html>
+  <body>
+  <a name="top" style="font-size:60px">Top page</a>
+  <h1 align="center">Welcome to Anchor tag</h1>
+
+  <a href="red.html">go to red page</a>
+  <br>
+  <p align="center" style="color:purple;font-size:50px"> 
+  Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+</p>
+ <p align="center" style="color:yellow;font-size:50px"> 
+To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+</p>
+
+ <p align="center" style="color:orange;font-size:50px"> 
+Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+</p>
+ <p align="center" style="color:lightgreen;font-size:50px"> 
+Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.
+</p>
+
+  </body>
+</html>
+------------------------------------------------------------
+id attribute
+-----------------
+<html>
+  <body>
+<a href="#h17">click to heading17</a>
+    <h1>Heading1</h1>
+   <h1>Heading2</h1>
+  <h1>Heading3</h1>
+  <h1>Heading4</h1>
+ <h1>Heading5</h1>
+<h1>Heading6</h1>
+<h1>Heading7</h1>
+<h1>Heading8</h1>
+<h1>Heading9</h1>
+<h1>Heading10</h1>
+<h1>Heading11</h1>
+<h1>Heading12</h1>
+<h1>Heading13</h1>
+<h1>Heading14</h1>
+<h1>Heading15</h1>
+<h1>Heading16</h1>
+<h1 id="h17">Heading17</h1>
+<h1>Heading18</h1>
+<h1>Heading19</h1>
+<h1>Heading20</h1>
+  </body>
+</html>
+----------------------------------------------------------
+how to open a mail-id in Anchor tag
+---------------------------------------
+<html>
+  <body>
+<a href="mailto:ski.ruthikappm@gmail.com">open a Mail</a>
+ 
+  </body>
+</html>
+----------------------------------------------------------
+how to open a calling process in Anchor tag
+---------------------------------------
+
+<html>
+  <body>
+<a href="tel:7845575681">open a Mail</a>
+ 
+  </body>
+</html>
+-------------------------------------------
+linking our page to other websites
+--------------------------------------
+<html>
+  <body>
+<a href="https://www.youtube.com">open a chennal</a>
+ 
+  </body>
+</html>
+----------------------------------------------------------
+iframe tag
+------------
+--->A webpage with in another webpage(Nested Webpage)
+
+
+syntax:
+---------
+<iframe>.....</iframe>
+
+
+I.src
+-----
+
+syntax:
+---------
+<iframe src="url">.....<iframe>
+
+<html>
+  <body>
+  <iframe src="red.html">RedPage</iframe><br>
+
+ <iframe src="green.html">RedPage</iframe>
+
+  </body>
+</html>
+
+
+II.width&height
+-------------------
+<html>
+  <body>
+  <iframe src="red.html" width="150px" height="150px">RedPage</iframe><br>
+
+ <iframe src="green.html" width="150px" height="150px">RedPage</iframe>
+
+  </body>
+</html>
+----------------------------------------------
+III.frameborder
+------------------
+value-->0 or 1
+
+1-->no border(default)
+0--->create a border
+
+EX:
+---
+<html>
+  <body>
+  <iframe src="Two.html" width="150px" height="150px" frameborder="0">RedPage</iframe><br><br>
+
+ <iframe src="green.html" width="150px" height="150px">RedPage</iframe>
+
+  </body>
+</html>
+--------------------------------------------------
+margin width&margin height
+-------------------------------
+<html>
+  <body>
+  <iframe src="Two.html" width="50%" height="50%" frameborder="0" marginheight="130" marginwidth="50">RedPage</iframe><br><br>
+
+ <iframe src="green.html" width="150px" height="150px">RedPage</iframe>
+
+  </body>
+</html>
+---------------------------------------------------------
+name attribute
+------------------
+<html>
+  <body>
+  <a href="Two.html"  target="iframe1">iframe1</a><br>
+  <a href="green.html"  target="iframe2">iframe2</a>
+  <iframe name="iframe1">
+</iframe>
+ <iframe name="iframe2">
+</iframe>
+
+
+  </body>
+</html>
+**************************************************************************************************************************************************
+
+Day-4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>code tag</h1>
+<code>
+x=5;
+y=20;
+z=x+y;
+</code>
+
+<p>save the document by pressing <kbd style="font-size:30px">ctrl+s</kbd></p>
+
+<p>Message from my computer</p>
+<p><samp>file not found<br> press F1 to continue</samp></p>
+
+<p>Mathematical formula is:
+    <var>a</var>(<var>b</var>+<var>c
+        
+            
+    </var>)=<var>ab</var>+<var>bc<var></p>
+    
+        <pre>
+            public class A
+          {
+              public static void main(String[] args)
+          {
+              System.out.println(“welcome”);
+          }
+          }
+          </pre>
+
+          <p>HTML is <q>Hyper Text Markup Language</q></p>
+
+          <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+        </p>
+        <blockquote>
+            <q>To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+            </q></blockquote>
+             
+            <address>The article is written by:<b>BalaGurusamy</b><br>
+                Contact author at:
+                <a href=mailto:abc@gamil.com>Exmple@gmail.com</a><br>
+                You can also visit our block:
+            </address>
+
+            <img src="bike.jpeg" width="50%" height="25%">
+            
+                
+                
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+     
+main{
+    color:blueviolet;
+}
+</style>        
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        I visited Epcot summer.This weather was very nice,and Epcot was amazing!I had a great summer together with my family.
+        </p>
+        
+            <p>
+            The Epcot center is a theme park at walk Disney world resort featuring  existing attractions.
+            </p>
+            <details open>
+                <summary>Copyright 2011-2014</summary>
+                <p>HTML is a Hyper Text Markup Language</p>
+                <p>It is used to front end developing</p>
+                </details>
+                
+                <main>
+                    <h1>Most popular Browser</h1>
+                    <p>Chrome,Firebox,Edge are the most popular web browser in today
+                    </p>
+                    <article>
+                    <h2>Google chrome</h2>
+                    <p>Google chrome is a web browser is developed by google,released in 2008</p>
+                    </article>
+                    <article>
+                        <h2>Mozilla firebox</h2>
+                        <p>Mozilla firebox is a open source web browser</p>
+                        </article>
+                        <article>
+                        <h2>Edge</h2>
+                        <p>Microsoft edge is a developed by Microsoft</p>
+                        </article>
+
+                        <h1>Example of nav tag</h1>
+<nav>
+             <a href="Layout.html" target="_blank">Home</a>|
+             <a href=“#”>Courses</a>|
+            <a href=“#”>About-Us</a>|
+            <a href=“#”>Contact-us</a>|
+</nav>
+   </main>
+        
+   <h2>Web designing Tutorial</h2>
+<section>
+<h3>HMTLM</h3>
+<p>Hyper Text Markup Language</p>
+</section>
+<section>
+<h3>CSS</h3>
+<p>Cascading Style Sheet</p>
+</section>
+
+<figure>
+    <img src="car.jpg" width="30%" height="40%">
+    <figcaption>This is car Image</figcaption>
+</figure>
+</body>
+</html>
+
+Image tag
+-----------
+jpg,png,gif,..
+
+--->It is used to display the image on the webpage
+
+---->Html Image tag contains attribute only
+
+--->closing tag is not used
+
+syntax:
+--------
+<img src="name_of_image" alt="text"  width="value"   height="value">
+
+
+src--->source
+alt--->alternative Text
+width-->width of the image
+height-->height of the image
+
+
+EX:
+----
+<html>
+  <body>
+   <img src="1.jpg">
+  </body>
+</html>
+
+
+EX:
+---
+<html>
+  <body>
+   <img src="1.jpg"><br>
+   <img src="2.jpg">
+  </body>
+</html>
+
+
+EX:
+---
+<html>
+  <body>
+   <img src="1.jpg" width="200px"  height="300px"><br>
+   <img src="2.jpg" width="200px"  height="300px">
+  </body>
+</html>
+
+
+EX:using % value in width and height
+---
+<html>
+  <body>
+   <img src="1.jpg" width="50%"  height="50%">
+  
+  </body>
+</html>
+
+
+EX:using style tag
+-------------------
+<html>
+  <body>
+   <img src="1.jpg" style="width:500px;height:600px">
+  
+  </body>
+</html>
+
+
+EX:using alt attribute
+-------------------------
+<html>
+  <body>
+   <img src="10.jpg" alt="no imgage"  style="width:500px;height:600px">
+  
+  </body>
+</html>
+
+
+EX:gif
+-------
+<html>
+  <body>
+   <img src="3.gif" alt="no image"  style="width:500px;height:600px">
+  
+  </body>
+</html>
+
+
+How to get the in images in another folder?
+--------------------------------------------
+<html>
+  <body>
+   <img src="F:\\Anand HTML\\HTML\\3.gif" alt="no image"  style="width:500px;height:600px">
+  
+  </body>
+</html>
+
+
+Images on another server/websites
+------------------------------------
+<html>
+  <body>
+   <img src="https://wallpapers.com/images/featured-full/hd-a5u9zq0a0ymy2dug.jpg" alt="no image"  style="width:500px;height:600px">
+  
+  </body>
+</html>
+-----------------------------------------------------------------------
+How to align the images in web page?
+---------------------------------------
+
+syntax:
+-------
+<img src="url" align="value">
+
+
+values--->Top,Bottom,left,Right,middle
+
+
+EX:
+---
+<html>
+  <body>
+<p>
+Video provides a powerful way to help you prove your point. When you click Online Video, <img src="https://wallpapers.com/images/featured-full/hd-a5u9zq0a0ymy2dug.jpg" alt="no image"  align="middle"  style="width:50px;height:60px">
+  you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+   
+  </body>
+</html>
+************************************************************************************************************************************************************
+
+Day-5
+marquee tag
+-------------
+marquee tag is used to scroll the images,text are horizontally or vertically
+
+
+syntax:
+-------
+<marquee>....</marquee>
+
+
+EX:
+---
+<html>
+  <body>
+   <marquee>This is Marquee tag</marquee>
+  </body>
+</html>
+
+
+Marquee tag attributes
+--------------------------
+1)bgcolor--->backcolor
+--------------------------
+
+syntax:
+-------
+<marquee  bgcolor="value">.....</marquee>
+
+
+2)width & height
+-----------------
+syntax:
+-------
+<marquee width="value"  height="value">
+
+EX:
+---
+<html>
+  <body>
+   <marquee bgcolor="red"  height="30%">
+Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+</marquee>
+  </body>
+</html>
+-----------------------------------------------------------
+behaviour
+------------
+values
+--------
+scroll----->default
+alternate
+slide
+
+EX:
+---
+<html>
+  <body>
+   <marquee bgcolor="red"  height="30%" behavior="alternate">
+  This is Marquee tag
+</marquee>
+  </body>
+</html>
+
+direction
+---------
+values
+--------
+right
+left
+up
+down
+
+<html>
+  <body>
+   <marquee bgcolor="red"  height="30%" direction="down">
+  This is Marquee tag
+</marquee>
+  </body>
+</html>
+--------------------------------------------------
+scrolldelay
+----------------
+ <marquee scrolldelay="value">.....</marquee>
+
+
+EX:
+----
+<html>
+  <body>
+   <marquee bgcolor="red"  height="30%" direction="down" scrolldelay="1300">
+  This is Marquee tag
+</marquee>
+  </body>
+</html>
+
+scrollamount
+--------------
+ <marquee scrollamount="value">.....</marquee>
+
+<html>
+  <body>
+   <marquee bgcolor="red"  height="30%"  scrollamount="13px">
+  This is Marquee tag
+</marquee>
+  </body>
+</html>
+
+
+loop
+-------
+--->no.of.repeating time
+
+syntax:
+---------
+<marquee loop="value">
+
+
+EX:
+---
+<html>
+  <body>
+   <marquee bgcolor="red"  height="30%"  loop="3" scrollamount="13px">
+  This is Marquee tag
+</marquee>
+  </body>
+</html>
+
+
+
+vspace & hspace
+---------------
+
+syntax:
+---------
+<marquee  vspace="value"  hspace="value">
+
+
+EX:
+----
+<html>
+  <body>
+   <marquee bgcolor="red"  height="30%" vspace="50px" hspace="150px">
+  This is Marquee tag
+</marquee>
+  </body>
+</html>
+
+
+using image in Marquee
+------------------------
+EX:
+---
+<html>
+  <body>
+   <marquee bgcolor="red"  height="30%" vspace="50px" hspace="150px">
+  <img src="F:\\Anand HTML\\HTML\\3.gif">
+</marquee>
+  </body>
+</html>
+
+----------------------------------------------------------
+
+Tables
+----------
+--->It is used to display the datas in tabule form(rows and column)
+
+
+syntax:
+---------
+<table>....</table>
+
+<tr>..</tr>--->table row
+
+<th>...</th>---->table header
+
+<td>...<td>--->table data
+
+
+list if table tags
+---------------------
+1)table
+2)tr
+3)th
+4)td
+5)caption
+6)colgroup
+7)col
+8)tbody
+9)thead
+10)tfooter
+
+
+<html>
+    <head>
+        <title>This is My Table Tag</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Computer</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+EX:
+---
+<html>
+    <head>
+        <title>This is My Table Tag</title>
+    </head>
+    <body>
+        <table>
+            <tr><th>Items</th></tr>
+                <tr>
+                    <td>Computer</td>
+                    <td>Mobile phone</td>
+                    <td>TV</td>
+                </tr>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+EX:
+---
+<html>
+    <head>
+        <title>This is My Table Tag</title>
+    </head>
+    <body>
+        <table border="1px solid black">
+               <tr><th>Items</th> </tr>
+                <tr><td>Computer</td></tr>
+                <tr><td>Mobile phone</td></tr>
+                <tr><td>TV</td></tr>
+            </tr>
+        </table>
+    </body>
+</html>
+----------------------------------------------------
+HTML Table creation 
+----------------------
+1)by border attribute use in table tag
+2)by border properties in css
+
+
+I.by border attribute use in table tag
+--------------------------------------------
+<html>
+    <head>
+        <title>This is My Table Tag</title>
+    </head>
+    <body>
+        <table border="1px solid red">
+            <tr><th>Sno</th> 
+                 <th>Name</th>
+                 <th>Dept</th>
+            </tr>
+
+            <tr><td>1</td><td>User1</td><td>CSE</td></tr>
+            <tr><td>2</td><td>User2</td><td>IT</td></tr>
+            <tr><td>3</td><td>User3</td><td>EEE</td></tr>
+            
+        </table>
+    </body>
+</html>
+
+
+2)by border properties in css
+-------------------------------
+<html>
+    <head>
+        <title>This is My Table Tag</title>
+        <style>
+            table,th,td{
+                border: 2px solid rebeccapurple;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr><th>Sno</th> 
+                 <th>Name</th>
+                 <th>Dept</th>
+            </tr>
+
+            <tr><td>1</td><td>User1</td><td>CSE</td></tr>
+            <tr><td>2</td><td>User2</td><td>IT</td></tr>
+            <tr><td>3</td><td>User3</td><td>EEE</td></tr>
+            
+        </table>
+    </body>
+</html>
+
+
+EX:
+----
+
+<html>
+    <head>
+        <title>This is My Table Tag</title>
+        
+    </head>
+    <body>
+        <table style="border:1px solid black;border-collapse:collapse">
+            <tr><th>Sno</th> 
+                 <th>Name</th>
+                 <th>Dept</th>
+            </tr>
+
+            <tr><td>1</td><td>User1</td><td>CSE</td></tr>
+            <tr><td>2</td><td>User2</td><td>IT</td></tr>
+            <tr><td>3</td><td>User3</td><td>EEE</td></tr>
+            
+        </table>
+    </body>
+</html>
+
+
+change the color separate cell using font tag?
+-----------------------------------------------
+<html>
+    <head>
+        <title>This is My Table Tag</title>
+        <style>
+            table,th,td{
+                border: 1px solid rebeccapurple;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr><th>Sno</th> 
+                 <th>Name</th>
+                 <th>Dept</th>
+            </tr>
+
+            <tr><td>1</td><td>User1</td><td>CSE</td></tr>
+            <tr><td>2</td><td>User2</td><td><font color="red">IT</font></td></tr>
+            <tr><td>3</td><td>User3</td><td>EEE</td></tr>
+            	
+        </table>
+    </body>
+</html>
+--------------------------------------------------------------
+change the font color,size,font-family in table tag
+----------------------------------------------------
+<html>
+    <head>
+        <title>This is My Table Tag</title>
+        <style>
+            table,th,td
+            {
+                border: 1px solid rebeccapurple;
+                border-collapse: collapse;
+            }
+            th,td{
+                color:brown;
+                font-size:30px;
+            }
+            body{
+                color:blue;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body bgcolor="yellow">
+        <h1>Student Details</h1>
+        <table>
+            <tr><th>Sno</th> 
+                 <th>Name</th>
+                 <th>Dept</th>
+            </tr>
+
+            <tr><td>1</td><td>User1</td><td>CSE</td></tr>
+            <tr><td>2</td><td>User2</td><td>IT</td></tr>
+            <tr><td>3</td><td>User3</td><td>EEE</td></tr>
+            
+        </table>
+    </body>
+</html>
+-----------------------------------------------------------------
+<html>
+    <head>
+        <title>This is My Table Tag</title>
+        <style>
+            table
+            {
+                border: 3px solid rebeccapurple;
+                width:50%;
+                height:50%;
+            }
+           
+            td{
+                color:darkmagenta;
+                font-size:20px;
+                border:5px solid green;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Student Details</h1>
+        <table>
+            <tr><th>Sno</th> 
+                 <th>Name</th>
+                 <th>Dept</th>
+            </tr>
+
+            <tr><td>1</td><td>User1</td><td>CSE</td></tr>
+            <tr><td>2</td><td>User2</td><td>IT</td></tr>
+            <tr><td>3</td><td>User3</td><td>EEE</td></tr>
+            
+        </table>
+    </body>
+</html>
+-----------------------------------------------------------------
+How to apply bgcolor in individual cell?
+--------------------------------------------
+
+<html>
+    <head>
+        <title>This is My Table Tag</title>
+        <style>
+            table
+            {
+                border: 3px solid rebeccapurple;
+                width:50%;
+                height:50%;
+            }
+           
+            td{
+                color:darkmagenta;
+                font-size:20px;
+                border:5px solid green;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Student Details</h1>
+        <table>
+            <tr><th bgcolor="yellow">Sno</th> 
+                 <th bgcolor="orange">Name</th>
+                 <th bgcolor="pink"> Dept</th>
+            </tr>
+
+            <tr><td>1</td><td>User1</td><td>CSE</td></tr>
+            <tr><td>2</td><td>User2</td><td>IT</td></tr>
+            <tr><td>3</td><td>User3</td><td>EEE</td></tr>
+            
+        </table>
+    </body>
+</html>
+
+(whole table-->change the background color)
+-----------------------------------------------
+css property
+---------------
+  th{
+                background-color: cyan;
+     }
+
+
+<html>
+    <head>
+        <title>This is My Table Tag</title>
+        <style>
+            table
+            {
+                border: 3px solid rebeccapurple;
+                width:50%;
+                height:50%;
+                background-color: aquamarine;
+            }
+           
+            td{
+                color:darkmagenta;
+                font-size:20px;
+                border:5px solid green;
+            }
+            th{
+                background-color: sandybrown;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Student Details</h1>
+        <table>
+            <tr><th>Sno</th> 
+                 <th>Name</th>
+                 <th> Dept</th>
+            </tr>
+
+            <tr><td>1</td><td>User1</td><td>CSE</td></tr>
+            <tr><td>2</td><td>User2</td><td>IT</td></tr>
+            <tr><td>3</td><td>User3</td><td>EEE</td></tr>
+            
+        </table>
+    </body>
+</html>
+-----------------------------------------------------------------
+cell-spacing,cell-padding
+-----------------------------
+<html>
+    <head>
+        <title>This is My Table Tag</title>
+        <style>
+            table
+            {
+                border: 3px solid rebeccapurple;
+                width:50%;
+                height:50%;
+                background-color: aquamarine;
+                
+            }
+           
+            td{
+                color:darkmagenta;
+                font-size:20px;
+                border:5px solid green;
+            }
+            th{
+                background-color: sandybrown;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Student Details</h1>
+        <table cellspacing="30px" cellpadding="45px">
+            <tr><th>Sno</th> 
+                 <th>Name</th>
+                 <th> Dept</th>
+            </tr>
+
+            <tr><td>1</td><td>User1</td><td>CSE</td></tr>
+            <tr><td>2</td><td>User2</td><td>IT</td></tr>
+            <tr><td>3</td><td>User3</td><td>EEE</td></tr>
+            
+        </table>
+    </body>
+</html>
+--------------------------------------------------------------
+rowspan
+-------
+<html>
+     <body>
+        <table border="1px solid black">
+            <tr><th>Name</th> 
+                <td>Lotus</td>
+            </tr>
+            <tr><th rowspan="2">Mobile number</th>
+                 <td>9876543210</td>
+                 <tr><td>9745621550</td></tr>
+            </tr>
+        </table>
+     </body>
+</html>
+
+
+colspan
+---------
+<html>
+     <body>
+        <table border="1px solid black">
+            <tr>
+                 <th>Name</th> <th colspan="3">Mobile Number</th>
+                </tr>
+           <tr>
+               <td>RoJa</td> 
+               <td>9876543210</td> <td>9865327410</td><td>9865327410</td>
+            </tr>
+        </table>
+     </body>
+</html>
+---------------------------------------------------------
+table width&heigth
+---------------
+table
+{
+   width:value;
+   height:value;
+}
+
+
+<html>
+    <head>
+        <style>
+            table{
+                width:100%;
+                height:50%;
+            }
+        </style>
+    </head>
+     <body>
+        <table border="1px solid black">
+            <tr>
+                 <th>Name</th> <th colspan="3">Mobile Number</th>
+                </tr>
+           <tr>
+               <td>RoJa</td> 
+               <td>9876543210</td> <td>9865327410</td><td>9865327410</td>
+            </tr>
+        </table>
+     </body>
+</html>
+----------------------------------------------------------------
+table attributes
+---------------------
+
+1)border
+-----------
+syntax:
+---------
+<table boder="value">
+
+EX:
+---
+<table boder="1px">
+
+
+2)bodercolor
+----------------
+<table bodercolor="value">
+
+EX:
+---
+<table bodercolor="red">
+
+
+3)height
+4)width
+-------------
+
+syntax:
+---------
+<table width="value"  heigth="value">
+
+EX:
+---
+<table heigth="10px"  width="30%">
+
+
+5)bgcolor
+-----------
+syntax:
+---------
+<table bgcolor="value">
+
+EX:
+---
+<table bgcolor="orange">
+
+
+
+6)background
+----------------
+
+syntax:
+----------
+<table background="imagename">
+
+EX:
+---
+<table background="1.jpg">
+
+
+7)align
+---------
+<table align="value">
+
+EX:
+---
+value--->left,right,center
+
+
+
+8)cellpadding
+9)cellspacing
+
+syntax:
+-------
+<table cellspacing="value"  cellpadding="value">
+
+EX:
+----
+<table cellspacing="10px" cellpadding="15px">
+------------------------------------------------------------------
+td/th attributes
+---------------------
+1)align
+--------
+<th align="value">
+
+value--->left,right,center
+
+
+2)bgcolor
+---------------
+
+<th bgcolor="value">
+
+3)colspan,rowspan
+-------------------
+syntax:
+--------
+<th rowspace="value">
+
+<th colspace="value">
+
+
+
+EX:
+---
+<html>
+    <head>
+        <style>
+            table{
+                width:100%;
+                height:50%;
+            }
+        </style>
+    </head>
+     <body>
+        <table border="1px solid black">
+            <tr>
+                 <th>Name</th> <th colspan="3">Mobile Number</th>
+                </tr>
+           <tr align="center">
+               <td>RoJa</td> 
+               <td>9876543210</td> <td>9865327410</td><td>9865327410</td>
+            </tr>
+        </table>
+     </body>
+</html>
+--------------------------------------------------------------
+set background image in the table tag
+-------------------------------------
+<html>
+    <head>
+        <style>
+            table,th,td{
+               
+                border:3px solid black;
+            }
+        </style>
+    </head>
+     <body>
+        <table background="F:\\Anand HTML\\HTML\\2.jpg">
+            <tr>
+                 <th>Name</th> <th colspan="3">Mobile Number</th>
+                </tr>
+           <tr align="center">
+               <td>RoJa</td> 
+               <td>9876543210</td> <td>9865327410</td><td>9865327410</td>
+            </tr>
+        </table>
+     </body>
+</html>
+------------------------------------------------------------------
+caption
+----------
+-->HTML  caption displayed above the table
+-->It must be declared after table tag only
+
+
+syntax:
+---------
+<table>
+  <caption>provide heading of the about table </caption>
+</table>
+
+
+<html>
+    <head>
+        <style>
+            table,th,td{
+               
+                border:3px solid black;
+            }
+        </style>
+    </head>
+     <body>
+        <table background="F:\\Anand HTML\\HTML\\2.jpg">
+            <caption style="color: deeppink;font-size:25px;">Student Information</caption>
+            <tr>
+                 <th>Name</th> <th colspan="3">Mobile Number</th>
+                </tr>
+           <tr align="center">
+               <td>RoJa</td> 
+               <td>9876543210</td> <td>9865327410</td><td>9865327410</td>
+            </tr>
+        </table>
+     </body>
+</html>
+---------------------------------------------------------------------------
+tbody,thead,tfoot
+---------------------
+thead
+-------
+--->it is used to define the header of the html tag
+
+
+tfoot
+---------
+-->footer of the html tag
+
+tbody
+--------
+body part of the table
+
+<html>
+    <head>
+        <title>Table Tag</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                width:100%;
+                height: 50%;
+            }
+            thead,tfoot
+            {
+               background-color: chartreuse; 
+            }
+
+            tbody
+            {
+                background-color: darkkhaki;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <table border="1px">
+            <thead>
+                 <tr>
+                      <th>ITEMS</th>
+                      <th>QUANITY</th>
+                      <th>PRICE</th>
+                 </tr>
+            </thead>
+
+            <tbody>
+                  <tr>
+                     <td>Bookd</td>
+                     <td>5</td>
+                     <td>500</td>
+                  </tr>
+
+                  <tr>
+                     <td>Drawing Paper</td>
+                     <td>10</td>
+                     <td>50</td>
+                  </tr>
+
+
+                  <tr>
+                    <td>Pencil</td>
+                    <td>15</td>
+                    <td>100</td>
+                  </tr>
+                </tbody>
+            <tfoot>
+              <tr>
+                  <th>Total</th>
+                  <th>30</th>
+                  <th>650</th>
+              </tr>  
+	</tfoot>
+        </table>
+    </body>
+</html>
+----------------------------------------------------------
+colgroup,col
+---------------------
+syntax:
+---------
+<colgroup>
+  <col style=" " span="value">
+</colgroup>
+
+
+<html>
+    <head>
+        <title>Table Tag</title>
+        
+    </head>
+
+    <body>
+        <table border="1px">
+            <colgroup>
+                <col style="background-color: beige;width:20%;">
+                <col span="2" style="background-color: chartreuse;width:40%">
+            </colgroup>
+            
+                 <tr>
+                      <th>ITEMS</th>
+                      <th>QUANITY</th>
+                      <th>PRICE</th>
+                 </tr>
+            
+
+            
+                  <tr>
+                     <td>Bookd</td>
+                     <td>5</td>
+                     <td>500</td>
+                  </tr>
+
+                  <tr>
+                     <td>Drawing Paper</td>
+                     <td>10</td>
+                     <td>50</td>
+                  </tr>
+
+
+                  <tr>
+                    <td>Pencil</td>
+                    <td>15</td>
+                    <td>100</td>
+                  </tr>
+               
+              <tr>
+                  <th>Total</th>
+                  <th>30</th>
+                  <th>650</th>
+              </tr>  
+        </table>
+    </body>
+</html>
+-------------------------------------------------------------
+EX:
+---
+<html>
+    <head>
+        <title>Table Tag</title>
+        
+    </head>
+
+    <body>
+        <table border="1px">
+            <colgroup>
+                <col style="background-color: beige;width:20%;">
+                <col span="2" style="background-color: chartreuse;width:40%">
+            </colgroup>
+            
+                 <tr>
+                      <th><a href="red.html">ITEMS</a></th>
+                      <th>QUANITY</th>
+                      <th>PRICE</th>
+                 </tr>
+            
+
+            
+                  <tr>
+                     <td>Bookd</td>
+                     <td>5</td>
+                     <td>500</td>
+                  </tr>
+
+                  <tr>
+                     <td>Drawing Paper</td>
+                     <td>10</td>
+                     <td>50</td>
+                  </tr>
+
+
+                  <tr>
+                    <td>Pencil</td>
+                    <td>15</td>
+                    <td>100</td>
+                  </tr>
+               
+              <tr>
+                  <th>Total</th>
+                  <th>30</th>
+                  <th>650</th>
+              </tr>  
+        </table>
+    </body>
+</html>
+--------------------------------------------------------------
+
+Day-6
+Form tag
+---------
+---->collection of user input
+Form tag
+----------
+1)form
+2)input
+3)textarea
+4)label
+5)fieldset
+6)lengend
+7)select
+8)optgroup
+9)option
+10)button
+11)datalist
+
+syntax:
+--------
+<form>
+</form>
+
+
+input
+------
+syntax:
+-------
+<input type="value">
+
+EX:
+----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form>
+    <p>First Name=<input type="text"></p>
+    <p>Last Name=<input type="text"></p>
+   </form>
+</body>
+</html>
+
+-----------------------------------------------------
+name attribute
+-------------------
+
+syntax:
+----------
+<input type=" " name=" ">
+
+EX:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form>
+    <p>First Name=<input type="text" name="Firstname"></p>
+    <p>Last Name=<input type="text" name="lastname"></p>
+   </form>
+</body>
+</html>
+
+--------------------------------------------------------------
+placeholder
+--------------
+<body>
+   <form>
+    <p><input type="text" name="Firstname" placeholder="FirstName"></p>
+    <p><input type="text" name="lastname" placeholder="LastName"></p>
+   </form>
+</body>
+</html>
+
+size attribute[entry box width]
+---------------
+syntax:
+--------
+<input type="text" size="value">
+
+maxi length
+--------------
+it take maxi length of a text
+
+<body>
+   <form>
+    <p>Firstname<input type="text" name="Firstname" size="10" maxlength="5"></p>
+    <p>lastname<input type="text" name="lastname" size="10" maxlength="5"></p>
+   </form>
+</body>
+</html>
+-------------------------------------------------
+password
+----------
+syntax:
+-----------
+<input type="password">
+
+
+EX:
+---
+<body>
+   <form>
+    <p>Name<input type="text"></p>
+    <p>Password<input type="password"></p>
+   </form>
+</body>
+</html>
+--------------------------------------------------------
+submit button
+----------------
+syntax:
+--------
+<input type="submit">
+
+<body>
+   <form>
+    <p>Name<input type="text"></p>
+    <p>Password<input type="password"></p>
+    <input type="submit" value="Click">
+   </form>
+</body>
+</html>
+
+form attribute
+----------------
+1)method
+2)action
+
+<form action=""  method=""></form>
+
+
+method--->post/get
+
+action--->filename.exe(backend process file(java,php,python,...))
+
+
+get--->public(used multiple user)EX:amazon,flipkart,....
+
+post--->private
+----------------------------------------------------
+Name
+password
+button
+
+textarea
+------------
+syntax:
+--------
+<textarea>....</textarea>
+
+
+<textarea name=" " rows=" " cols=" " placeholder=" ">....</textarea>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form method="post">
+    <p>Name<input type="text" name="name"></p>
+    <p>Password<input type="password" name="password"></p>
+   <textarea rows="5" cols="25" placeholder="Enter the Address"></textarea><br>
+    <input type="submit" value="Click">
+   </form>
+</body>
+</html>
+-----------------------------------------------------------------------
+Radio button
+-------------
+
+<input type="radio" checked="checked">
+
+EX:
+---
+I want to learn first
+
+HTML    CSS   JS
+
+
+<p>Select Gender =
+    <input type="radio" name="female" value="Female" checked>female
+    <input type="radio" name="male" value="Male">Male</p>
+    <input type="submit" value="Click">
+   </form>
+------------------------------------------------------------------
+checkbox
+-------------
+syntax:
+--------
+<input type="checkbox">
+
+
+<p>My Hobbies are:<br>
+        <input type="checkbox" name="hobbies[]"  value="games">games
+        <input type="checkbox" name="hobbies[]"  value="Drawing">Drawing
+        <input type="checkbox" name="hobbies[]"  value="swimming">swimming
+        <input type="checkbox" name="hobbies[]"  value="Singing">Singing
+       
+    </p>
+
+
+------------------------------------------------
+<p>My Hobbies are:<br>
+        <input type="checkbox" name="hobbies[]"  value="games">games
+        <input type="checkbox" name="hobbies[]"  value="Drawing" checked>Drawing
+        <input type="checkbox" name="hobbies[]"  value="swimming">swimming
+        <input type="checkbox" name="hobbies[]"  value="Singing">Singing
+       
+    </p>
+
+---------------------------------------------------------------------------
+select
+--------
+---->It is used to create a drop down list in multiple option
+
+syntax:
+--------
+<select>
+    <option value="">....</option>
+
+</select>
+
+
+selected attribute
+---------------------
+selected="selected" (or) seleceted
+
+
+EX:
+----
+<p>Select Your Favourite color:<br>
+        <select>
+            <option>------Select Your Color------</option>
+            <option value="yellow">Yellow</option>
+            <option value="Black"  selected>Black</option>
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Orange">Orange</option>
+
+        </select>
+</p>
+
+using style
+-------------
+<p>Select Your Favourite color:<br>
+        <select>
+            <option>------Select Your Color------</option>
+            <option value="yellow" style="color:yellow">Yellow</option>
+            <option value="Black">Black</option>
+            <option value="Red" style="color:red">Red</option>
+            <option value="Green" style="color:green">Green</option>
+            <option value="Orange" style="color:orange">Orange</option>
+
+        </select>
+------------------------------------------------------
+Form selecting multiple choice in dropdown list
+-----------------------------------------------
+<p>Select your Course
+
+    <select name="select option" multiple>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="Java">Java</option>
+        <option value="C#.net">C#.net</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JS">JS</option>
+    </select>
+</p>
+-------------------------------------------------------------
+How to insert file in Form?
+------------------------------
+action
+method
+
+<form enctype="multipart/form-data">
+
+syntax:
+----------
+<input type="file">
+
+
+EX:
+----
+<p>Select Your Resume:
+    <input type="file" name="Resume"> 
+</p>
+
+
+
+EX:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form method="post">
+    <p>Name<input type="text" name="name"></p>
+    <p>Password<input type="password" name="password"></p>
+   <textarea rows="5" cols="25" placeholder="Enter the Address"></textarea><br>
+
+   <p>Select Gender =
+    <input type="radio" name="female" value="Female" checked>female
+    <input type="radio" name="male" value="Male">Male</p>
+
+
+    <p>My Hobbies are:<br>
+        <input type="checkbox" name="hobbies[]"  value="games">games
+        <input type="checkbox" name="hobbies[]"  value="Drawing" checked>Drawing
+        <input type="checkbox" name="hobbies[]"  value="swimming">swimming
+        <input type="checkbox" name="hobbies[]"  value="Singing">Singing
+       
+    </p>
+
+    <p>Select Your Favourite color:<br>
+        <select>
+            <option>------Select Your Color------</option>
+            <option value="yellow" style="color:yellow">Yellow</option>
+            <option value="Black"  >Black</option>
+            <option value="Red" style="color:red">Red</option>
+            <option value="Green" style="color:green">Green</option>
+            <option value="Orange" style="color:orange">Orange</option>
+
+        </select>
+</p>
+
+<p>Select your Course
+
+    <select name="select option" multiple>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="Java">Java</option>
+        <option value="C#.net">C#.net</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JS">JS</option>
+    </select>
+</p>
+
+<p>Select Your Resume:
+    <input type="file" name="Resume"> 
+</p>
+    <input type="submit" value="Click">
+   </form>
+</body>
+</html>
+---------------------------------------------------------------
+label tag
+----------
+---->It is used to specify a label for <input> element of a Form tag
+
+syntax:
+----------
+<label>....</label>
+
+for and id attribute
+--------------------------
+
+<label for="value">
+
+</label>
+
+
+<input id="value">
+
+
+for and id attribute values both are same
+
+
+EX:
+---
+   <form method="post">
+  <label for="username">UserName=</label>
+  <input type="text" name="name" id="username"><br><br>
+    
+
+    <label for="Password">Password=</label>
+  <input type="password" name="name" id="Password"><br>
+    <input type="submit" value="Click">
+   </form>
+--------------------------------------------
+field Set
+-----------
+<fieldset></filedset>
+
+
+EX:
+----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+   <form method="post">
+    <fieldset>
+        <h1>User Details</h1>
+  <label for="username">UserName=</label>
+  <input type="text" name="name" id="username"><br><br>
+    
+
+    <label for="Password">Password=</label>
+  <input type="password" name="name" id="Password"><br>
+    </fieldset>
+<fieldset>
+    <h1>Education Details</h1>
+
+    <label for="College">CollgeName</label>
+    <input type="text" id="College"><br><br>
+
+    <label for="year">Year</label>
+    <input type="text" id="year"><br><br>
+
+    <label for="depart">Department</label>
+    <input type="text" id="depart"><br><br>
+
+    <input type="submit" value="Click">
+</fieldset>
+   </form>
+</center>
+</body>
+</html>
+-----------------------------------------------------------
+legend
+--------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+         <form method="post">
+    <fieldset>
+        <legend style="font-size:30px">Student Information</legend>
+  
+        <h1>User Details</h1>
+  <label for="username">UserName=</label>
+  <input type="text" name="name" id="username"><br><br>
+    
+
+    <label for="Password">Password=</label>
+  <input type="password" name="name" id="Password"><br>
+    </fieldset>
+<fieldset>
+    <h1>Education Details</h1>
+
+    <label for="College">CollgeName</label>
+    <input type="text" id="College"><br><br>
+
+    <label for="year">Year</label>
+    <input type="text" id="year"><br><br>
+
+    <label for="depart">Department</label>
+    <input type="text" id="depart"><br><br>
+
+    <input type="submit" value="Click">
+</fieldset>
+   </form>
+</center>
+</body>
+</html>
+---------------------------------------------------------------------
+optgroup
+-----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label>Select your fav Brand</label>
+    <select>
+     <optgroup label="LApTOP Manufacture">
+        <option value="DELL">DELL</option>
+        <option value="LG">LG</option>
+
+        <option value="HP">HP</option>
+
+        <option value="LENOVA">LENOVA</option>
+    </optgroup>
+    <optgroup label="Mobile Manufacture">
+    <option value="Apple">Apple</option>
+        <option value="Nokia">Nokia</option>
+
+        <option value="ReDMI">REDMI</option>
+</optgroup>
+    </select>
+</form>
+</body>
+</html>
+------------------------------------------------------------------
+button
+----------
+syntax:
+----------
+<button>....</button>
+
+EX:
+----
+<button>Click</button>
+************************************************************************************************************************************************
+
+Day-7
+
+
+symmetic elements
+-----------------
+-------------------------------------------------------------------------
+HTML5 
+------
+1)Email field
+-------------
+syntax:
+----------
+<input type="email">
+
+required--->compulsory
+
+EX:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+       <p>
+        Email=<input type="email" name="e-mail">
+        </p>
+
+        <p>
+           Alter Email=<input type="email" name="e-mail" required>
+            </p>
+    
+        <input type="submit" value="Enter">
+
+    </form>
+</body>
+</html>
+
+-------------------------------------------------------
+Number field
+-----------------
+syntax:
+----------
+<input type="number" min="value"  max="value">
+
+ <p>
+    Quanity=<input type="number" name="Quanity">
+ </p>
+ <p>
+     Age=<input type="number" min="18" max="90">
+ </p>
+
+Date Field
+-----------
+
+syntax:
+---------
+<input type="date">
+
+EX:
+----
+<p>
+    DOB:<input type="date" name="DOB">
+</p>
+----------------------------------------------------------------
+url
+-----
+syntax:
+--------
+<input type="url">
+
+EX:
+---
+ <p>
+            Website Name=<input type="url" name="url">
+        </p>
+       
+time attribute
+-------------------
+syntax:
+-------
+<input type="time">
+
+EX:
+---
+<p>
+        Interview Time<input type="time">
+</p>
+--------------------------------------------------------
+week
+-------
+
+syntax:
+--------
+<input type="week">
+
+EX:
+---
+ <p>
+        Vocation Week=<input type="week" name="week">
+       </p>
+---------------------------------------------------------------------------
+search
+----------
+<input type="search">
+
+EX:
+--
+<p>Google Search=<input type="search" name="search"></p>
+
+       <p>
+
+-------------------------------------------------------------
+color
+-------
+<input type="color">
+
+EX:
+---
+<p>
+        color=<input type="color" name="name">
+       </p>
+
+---------------------------------------------------
+tel
+----
+<input type="tel">
+
+
+EX:
+----
+<p>Mobile number=
+        <input type="tel"  name="MobileNumber" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+       </p>
+----------------------------------------------------------------------
+
+Grouping Element
+---------------
+1)div
+2)span
+
+div
+------
+syntax:
+----------
+<div>...</div>
+
+<body>
+    <div style="padding: 10px;">
+        Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.
+
+    </div>
+    <div>
+        To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.
+    </div>
+    <div>
+        Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.
+    </div>
+</body>
+</html>
+----------------------------------------------------------------------
+span
+-------
+-->inline element
+
+<body>
+    <p>
+        I have choose a color name is 
+        <span style="color:red">red,</span>green,blue
+    </p>
+</body>
+************************************************************************************************************************************************************
+						-----------------HTML OVER------------------
+
+
+
+
+
+
+

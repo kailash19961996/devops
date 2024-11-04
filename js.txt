@@ -1,0 +1,4930 @@
+Day-1
+
+Javascript
+--------------
+
+HTML
+CSS
+
+
+program?
+----------
+Add 2 and 3
+print the 100 times
+if age is more than 60,provide discount 30%
+
+--->set of Instructions
+
+
+Histroy
+-------
+Developer: Brendan Eich
+Year:1995
+Company name:netscape
+
+OOPS
+----
+1)class
+2)object
+3)Inheritance
+4)Polymorphism
+5)Data Abstraction
+6)Encapsulation
+
+
+
+Right click Browser--->Inspect-->console
+
+
+EX:
+---
+console.log("hello js");
+VM87:1 hello js
+undefined
+console.log(3+4)
+VM140:1 7
+
+
+JS Print Function
+-----------------
+1)alertbox
+2)Document.write
+3)InnerHTML
+4)console.log
+
+
+1)alertbox
+------------
+--->Dialouge box
+
+EX:
+--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("This Page says");
+        </script>
+</body>
+</html>
+
+
+Document.write
+----------------
+--->testing purpose
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       document.write("Helloo JavaScript<br>");
+       document.write(100+200);
+        </script>
+</body>
+</html>
+------------------------------------------------------------
+InnerHTML
+-----------
+document.getElementById(id)
+
+EX:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is My Heading</h1>
+    <p>This is My para</p>
+    <h2 id="demo1"></h2>
+
+    <h1 id="demo2"></h1>
+
+    <script>
+       document.getElementById("demo1").innerHTML=4+5;
+
+       document.getElementById("demo2").innerHTML=4-5;
+        </script>
+</body>
+</html>
+--------------------------------------------------------------
+console.log
+---------------
+-->Degugging Process
+
+EX:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("hello js This is My first class");
+    </script>
+</body>
+</html>
+--------------------------------------------------------------------------
+External Js
+--------------
+bit=1
+bytes=
+ 8bits=1 byte     128 64 32 16 8 4 2 1
+console.log("welcome js");//String Data
+
+console.log(1234);//int data
+
+console.log(34.56);//float data
+
+console.log(true);//boolean
+
+console.log([1,2,3,4,6]);//Array values
+
+//jSON value
+
+//JSON--->JavaScript Object Notation
+
+
+
+console.log({fname:'user',age:29});
+
+console.table({fname:'user',age:29});
+
+//[1,2,3,4,56]--->list(or)Array
+//{1,2,3,54}--->set
+//{101:"C",102:"C++"}--->Dictionary
+
+//print Error Message
+
+console.error("SampleError!!");
+
+console.warn("Warning");
+
+console.clear();
+
+console.time("Timer")
+for(i=0;i<5;i++)
+{
+    console.log(i);
+}
+console.timeEnd("Timer");
+
+
+EX:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Abc.js">
+       
+    </script>
+</body>
+</html>
+-----------------------------------------------------------------
+Basic Syntax
+--------------
+1)comment
+----------
+
+<!---
+--->
+
+/*
+
+*/
+
+comment are used to explain js code and make it readable
+
+types
+---------
+1)single line comment[//]
+2)multiline comment[/*....*/]
+
+
+single line comment[//]
+---------------------------
+EX:
+---
+//This is single line Comment
+
+
+multiline comment[/*....*/]
+-------------------------------
+EX:
+---
+/*
+ this
+  is
+ multiline
+ comment
+*/
+------------------------------------------------
+variable
+-----------
+--->variable are used to store the data
+
+
+score=0;//variable initialization
+
+100=a;--->Invalid
+
+In C Program,
+int a=10;
+float b=10.50;
+
+In js is a dynamically typed language
+
+types:
+-------
+var
+let
+const
+
+
+var--->1997(both local and global)
+
+let--->2015[ES6](local)
+
+const--
+
+EX:
+---
+var a=25;
+var b=35;
+console.log(a+b);
+
+let s1=45;
+let s2=56
+console.log(s1-s2)
+
+
+I.Scope
+------------
+var
+-----
+--->it works with Both inside and outside scope
+
+if(true)
+{
+    var msg="I like JS"
+    console.log(msg)
+}
+console.log(msg)
+
+
+II.let
+--------
+--->it works with  inside the scope
+
+if(true)
+{
+   let msg="I like JS"
+   console.log(msg)
+}
+console.log(msg);//Error
+
+
+III.const
+-----------
+--->it works with  inside the scope
+
+if(true)
+{
+   const msg="I like JS"
+   console.log(msg)
+}
+console.log(msg)
+
+
+
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+
+   printf("Hai c Program");
+
+}
+----------------------------------------------------------------
+II.Variable Redeclaration
+--------------------------
+var
+----
+--->use redeclaration
+
+
+var a=10;
+console.log(a);//10
+var a=20;
+console.log(a);//20
+console.log(a*2);//40
+
+
+let
+------
+-->Don't use redeclaration
+
+let a=10;
+console.log(a);//10
+let a=100;
+console.log(a);//Error
+
+const
+------
+-->Don't use redeclaration
+
+const a=10;
+console.log(a);
+const a=25
+console.log(a)
+-------------------------------------------
+Value assignment
+--------------------
+I.var
+----------
+var x=100
+console.log(x)
+x=200
+console.log(x)
+
+
+II.let
+-------
+let x=100
+console.log(x);//100
+x=200//value assignment
+console.log(x)
+console.log(x*4)
+
+III.const
+----------
+const pi=3.14
+console.log(pi);//3.14
+pi=4.14
+console.log(pi);//Error
+-------------------------------------------------
+
+x=100
+console.log(x)
+
+x=200
+console.log(x)
+
+
+JSON
+-----
+
+//JSON value
+const student={"name":"user1","age":26};
+
+console.table(student);
+
+student.name="user2";
+
+console.table(student);
+
+
+Datatype
+-----------
+Data--->values
+
+types:
+------
+1)Primitive Datatype
+2)Reference Datatype
+
+Primitive Datatype
+--------------------
+1)Number--->eg:25,25.50
+2)boolean--->eg:true,false
+3)null--->EX:null means zero
+4)undefined--->value is empty
+5)string
+6)symbol--->Intro ES6
+
+
+Reference Datatype
+---------------------
+1)Array
+2)object literals
+3)date & time
+
+
+I.Number
+----------
+var a=100;
+console.log(a);
+
+console.log(typeof a);
+
+var b=25.50;
+console.log(b)
+console.log(typeof b)
+
+
+
+II.boolean
+--------------
+var iseligible=true;
+
+console.log(iseligible);
+
+console.log(typeof iseligible)
+
+var iseligible1=false;
+
+console.log(iseligible1);
+
+console.log(typeof iseligible1)
+--------------------------------------------
+III.string
+-----------
+var name="Javascript"
+
+console.log(name)
+
+console.log(typeof name)
+
+EX:
+---
+var letter='x';
+
+console.log(letter)
+
+console.log(typeof letter)
+----------------------------------------------------------
+null
+----
+var score=null;
+
+console.log(score);
+
+console.log(typeof score)//object
+--------------------------------------
+undefined
+-----------
+let b;
+console.log(b);//undefined
+
+console.log(typeof b);//undefined
+-----------------------------------------------
+symbol
+-------
+2015 ES6
+
+const s=Symbol()
+
+console.log(s);//Symbol()
+
+const s1=Symbol();
+
+console.log(s1);//Symbol()
+
+console.log(s==s1)//false
+
+
+Reference Datatype
+----------------------
+1)Array
+----------
+var courses=["HTML","CSS","JS","JQERY"]
+
+console.log(courses);
+
+console.log(typeof courses)
+
+
+2)JSON object
+----------------
+var student={'name':'user1','age':23};
+
+console.log(student);
+
+console.log(typeof student)
+----------------------------------------------
+find the current date
+---------------------
+var d=new Date()
+
+console.log(d)
+
+console.log(typeof d)
+--------------------------------------------------------
+type conversion
+------------------
+types:
+-----
+1)Implicit type Converstion
+2)Explicit Type Conversion
+
+I.Explicit Type Conversion(user convient)
+-------------------------------
+//Number to String Converstion
+
+a=25
+
+console.log(a,typeof a)
+//Number to String
+a=String(a);
+console.log(a,typeof a)
+
+a=25.5
+console.log(a,typeof a)
+//Number to String
+a=String(a);
+console.log(a,typeof a)
+
+a=true
+console.log(a,typeof a)
+//Boolean to String
+a=String(a);
+console.log(a,typeof a)
+
+a=new Date();
+console.log(a,typeof a)
+//Date to String
+a=String(a);
+console.log(a,typeof a)
+
+a=[1,2,4,5,7]
+console.log(a,typeof a)
+//array to string
+a=String(a);
+console.log(a,typeof a)
+
+//otherway
+
+a=25
+console.log(a,typeof a)
+a=a.toString()
+console.log(a,typeof a)
+----------------------------------------
+//String to Number
+
+a="1234"
+
+console.log(a,typeof a)
+
+a=Number(a);
+console.log(a,typeof a)
+
+//boolean to Number
+
+a=true
+console.log(a,typeof a)
+
+a=Number(a);
+console.log(a,typeof a)
+
+b=false
+console.log(b,typeof b)
+b=Number(b);
+console.log(b,typeof b)
+
+//Array object to Number
+
+a=[1,2,4,5]
+console.log(a,typeof a)
+
+a=Number(a);
+console.log(a,typeof a)//NaN-->not a Number,'number'
+
+
+//String to Number
+
+cname="JS"
+console.log(cname,typeof cname)
+
+cname=Number(cname);
+
+
+
+console.log(cname,typeof cname)//NaN-->not a Number,'number'
+---------------------------------------------------------------------
+a='35'
+
+console.log(a,typeof a)
+
+a=parseInt(a)
+
+console.log(a,typeof a)
+
+a='35.55'
+console.log(a,typeof a)
+
+a=parseFloat(a)
+console.log(a,typeof a)
+
+a='35.55'
+console.log(a,typeof a)
+
+a=parseInt(a)//35
+console.log(a,typeof a)
+------------------------------------------------------------
+Implicit type Converstion(or)type coercion
+-------------------------------------------
+---->It is a Process of automatic type conversion
+
+a="25"
+b=10
+
+console.log(a+b)//2510(String Conversion--->concat)
+
+a=Number(a)
+console.log(a+b)//35
+
+
+EX:
+---
+a=10//int
+b="45"//String
+
+console.log(a+b)//1045
+
+//Explicit type convesion
+
+b=Number(b);
+console.log(a+b)
+
+x=100
+y=200
+
+console.log(x+y)
+**************************************************************
+Day-2
+Promt in js[user Input]
+--------------------------
+
+EX:
+---
+
+let name=prompt("What is Your Name?")
+
+console.log("Welcome "+name)
+
+
+EX:
+---
+
+
+let ticket=prompt("How many tickets do you want")
+
+console.log("you should pay ",ticket*20)//60
+
+
+
+EX:
+----
+let a=prompt("Enter the Number")
+console.log(Number(a)+20);//concat
+------------------------------------------------------------
+Operator
+-----------
+
+12+3=15
+
+12,3--->Operand
++,=--->Operator
+
+
+Types:
+---------
+1)Arithmetic Operator
+2)Relation Operator (or)Comparision Operator
+3)Logical Operator
+4)Assignment Operator
+5)Ternary Operator(?:)
+6)Bitwise Operator
+7)Nullish Coalescing Operator(??)
+
+
+1)Arithmetic Operator
+-------------------------
+--->it is used for basic mathematical Calculation
+
+1)Addition(+)
+2)Subtraction(-)
+3)Multiplication(*)
+4)Division(/)------>12/3=4(Quotient)
+5)modulo(%)------>13%3=1(Remainder)
+6)compute power(**)--->2**3-->2*2*2=8
+7)increment(++)--->Increment Operator
+8)Decrement(--)--->Decrement Operator
+
+EX:
+---
+
+
+a=10
+b=20
+
+console.log(a+b)
+console.log(a-b)
+console.log(a*b)
+console.log(a/b)
+console.log(a%b)
+console.log(a**3);1000
+
+//Increment--->it is used increase the value by 1
+
+console.log(++a);//++  a--->11 --->preincrement(++var)
+console.log(a);//11
+
+console.log(b++);//b   ++  --->20 --->postIncrement(var++)
+console.log(b);//21
+
+//Decrement-->it is used decrease the value by 1
+
+c=45
+
+console.log(--c);//44
+
+console.log(c);//44
+
+console.log(c--);//44
+
+console.log(c);//43
+--------------------------------------------------
+2)Relational Operator
+-------------------------
+I.comparision Operator(==,===,!=)
+
+== ---->equal to
+=== -->strictly equality Operator
+!=  --->not Equal to
+
+EX:
+---
+a=10
+b=5
+
+console.log(a==b);//false
+
+b=10
+console.log(a==b);//true
+
+a=10//Number
+b="10"//string
+
+console.log(a==b)//true(It didn't check datatype)
+
+console.log(a===b)//false (It check datatype)
+
+a=10
+b=10
+
+console.log(a==b)//
+console.log(a===b)
+
+a=2
+b=3
+console.log(a!=b);//true
+
+a='4'
+b=4
+
+console.log(a!=b)//false
+-------------------------------------------
+Relational Operator
+---------------------
+
+< ---->less than
+> ---->greater than
+<= --->less than or equal to
+>= --->greater than or equal to
+
+x=100
+
+y=340
+
+console.log(x<y)//100<340--->true
+
+console.log(x>y);//100>340--->false
+
+console.log(x<=y);//100<=340--->true
+
+console.log(x<100)//100<100--->false
+
+console.log(x<=100);//100<=100--->true
+
+console.log(x>=y);//100>=340--->false
+
+console.log(340>=y);//340>=340--->true
+--------------------------------------------------
+Logical Operator
+---------------------
+1)logical And(&&)
+2)Logical OR(||)
+3)Logical Not(!)
+
+1)logical And(&&)
+--------------------
+
+0--->false
+1--->true
+
+
+A   B   A&B
+0   0    0
+0   1    0
+1   0    0
+1   1    1
+
+--->If both conditions are true, the result is True
+
+
+
+2)logical Or(||)
+--------------------
+
+0--->false
+1--->true
+
+
+A   B   A|B
+0   0    0
+0   1    1
+1   0    1
+1   1    1
+
+--->If any one  condition is  true, the result is True
+
+
+Logical Not
+-------------
+A   !A
+0    1
+1    0
+
+
+EX:
+----
+a=15
+b=3
+
+
+result1=(a<b)&&(a>b);//15<3 && 15>3 --->0 && 1--->0
+
+
+result2=(a!=b) || (a<=b);//(15!=3) || (15<=3)--->1 || 0---->1
+
+result3=!(a>b);//!(15>3)-->!(1)--->0
+
+console.log(result1);//false
+console.log(result2);//true
+console.log(result3);//false
+-----------------------------------------------------------------
+Assignment Operator
+-----------------------
+=
+==--->
+
+a=1000//assign a value to the variable
+
+a==1000//comparision
+
+1)add and Assign(+=)
+2)subtract and Assign(-=)
+3)Multiply and assign(*=)
+4)Divide and Assign(/=)
+5)Modulo and Assign(%=)
+6)power and assign(**=)
+
+
+1)add and Assign(+=)
+------------------------
+x=100
+x=x+20--->arithmetic
+
+x+=20--->x=x+20
+
+x+=30
+
+x=100
+
+y=20
+
+x+y--->Arithmetic Oper
+
+x=x+20
+
+x+=45--->x=100+45-->145
+
+2)Subtract and assign(-=)
+-----------------------------
+y=50
+
+y-=25-->y=y-25
+
+
+3)Multiply and Assign(*=)
+----------------------------
+z=30
+
+z*=3--->z=z*3
+
+
+4)divide and Assign(/=)
+--------------------------
+a=45
+
+a/=6--->a=a/6
+
+5)Modulo and Assign(%=)
+---------------------------
+b=23
+
+b%=2--->b=b%2
+
+6)power and Assign(**=)
+--------------------------
+c=4
+
+c**=3--->c=c**3
+
+
+EX:
+----
+var x=100,y=50,z=30,a=45,b=23,c=4;
+
+console.log(x+" "+y+" "+z+" "+a+" "+b+" "+c)
+
+
+x+=20
+y-=25
+z*=3
+a/=6
+b%=2
+c**=3
+
+console.log(x+" "+y+" "+z+" "+a+" "+b+" "+c)
+---------------------------------------------------------------
+
+5)Ternary Operator(?:)
+-------------------------
+var=(condition)?(result1):(result2)
+
+condition is true to print result1
+condition is false to print result2
+
+
+EX:
+---
+
+
+var age=26
+
+var result=(age>=18)?("Eligible"):("Not Eligible");
+
+console.log(result)
+
+
+EX:
+---
+
+
+var a=100,b=30;
+
+var max;
+
+max=(a>b)?(a):(b);
+
+console.log(max)
+-------------------------------------------------
+null values
+---------------
+
+
+function Welcome(name)//function creation
+{
+   console.log("Hii "+name)
+}
+
+Welcome();
+Welcome("Keerthi")
+
+
+
+EX:
+---
+
+
+//function function_name(arguments)
+
+function Welcome(name)//function creation
+{
+
+   result=name?name:"No Name"
+   //result=name?name:"no Name"
+   //result=name?("Keerthi"):("No Name")
+   //result=name?(null):("No Name")
+   console.log("Hii "+result)
+}
+
+Welcome();//function calling
+Welcome("Keerthi")
+Welcome(null)
+-------------------------------------------------------
+Object type
+--------------
+
+x={"fname":"user1","age":23};
+
+console.log(x)
+
+console.log(x.fname)
+
+console.log(x.age)
+
+
+
+EX:
+---
+function greeting()
+{
+    return "Hello";
+}
+greeting()//Hello
+
+console.log(greeting())
+
+
+EX:
+---
+x={"Fname":"user1","Course":"Js"}//JSON Object
+
+function greeting(x)
+{
+      y=x.Fname?(x.Fname):"No Name"
+      return "hello" +y
+}
+
+console.log(greeting(x))
+---------------------------------------------------
+chaining process(or)Check Multiple Condition
+----------------------------------------------
+
+
+avg=99
+
+/*
+  avg>=90-->A Grade
+  avg>=80--->B Grade
+   avg<=80--->C Grade
+   */
+
+   grade=(avg>=90)?("A Grade"):(avg>=70)?("B grade"):("C Grade")
+
+   console.log("Avg is "+grade)
+---------------------------------------------------------------------
+Bitwise Operator
+-------------------
+
+bit-->0's & 1's
+
+types:
+---------
+1)Bitwise And(&)
+2)Bitwise Or(|)
+3)Bitwise Ex-or(^)
+4)left-shift Operator(<<)
+5)right-shift Operator(>>)
+
+Bitwise And(&)
+------------------
+syntax:
+--------
+var1 & var2
+
+EX:
+---
+15 & 25
+
+
+1byte=8bits
+
+1GB=1024MB
+
+
+         128 64 32 16 8 4 2 1
+15------> 0   0  0  0 1 1 1 1
+25------> 0   0  0  1 1 0 0 1
+-----------------------------
+          0   0  0  0 1 0 0 1------->8+1=9               
+
+--------------------------------------------------------
+Bitwise Or(|)
+-----------------
+syntax:
+--------
+var1 | var2
+
+EX:
+---
+15 | 25
+
+
+1byte=8bits
+
+1GB=1024MB
+
+
+         128 64 32 16 8 4 2 1
+15------> 0   0  0  0 1 1 1 1
+25------> 0   0  0  1 1 0 0 1
+-----------------------------
+          0   0  0  1 1 1 1 1------>16+8+4+2+1=31
+
+
+Bitwise EX-or(^)
+-----------------
+syntax:
+----------
+var1 ^ var2
+
+
+A    B    A^B
+--------------
+0    0     0
+0    1     1
+1    0     1
+1    1     0
+
+
+EX:
+---
+15 ^ 25
+
+
+1byte=8bits
+
+1GB=1024MB
+
+
+         128 64 32 16 8 4 2 1
+15------> 0   0  0  0 1 1 1 1
+25------> 0   0  0  1 1 0 0 1
+-----------------------------
+          0   0  0  1 0 1 1 0---->16+4+2=22
+
+
+1024 512 256 128 64 32 16 8 4 2 1
+------------------------------------------------
+shift Operator
+----------------
+1)left-shift(<<)
+2)Right-shift(>>)
+
+
+1)left-shift(<<)
+---------------------
+EX:
+---
+ number<<no.shifts
+
+EX:
+--
+10<<3
+
+
+ 128 64 32 16 8 4 2 1
+  0   0  0  0 1 0 1 0
+  0   1  0  1 0 0 0 0--------->64+16=80
+
+
+10*2=20
+20*2=40
+40*2=80
+80*2=160
+
+Right-shift Operator(>>)
+---------------------------
+EX:
+---
+ number>>no.shifts
+
+EX:
+--
+10>>3
+
+
+ 128 64 32 16 8 4 2 1
+  0   0  0  0 1 0 1 0
+  0   0  0  0 0 0 0 1--->1
+
+
+10/2=5
+5/2=2
+2/2=1
+
+
+
+EX:
+---
+
+
+let a=15,b=25;
+
+console.log("Bitwise And "+(a&b))
+
+console.log("Bitwise Or "+(a|b))
+
+console.log("Bitwise X-or "+(a^b))
+
+let x=10,y=3;
+
+console.log("left-shift Operator "+(x<<y))
+
+console.log("Right-shift Operator "+(x>>y))
+
+-----------------------------------------------------------------------
+7)Nullish Coalescing Operator(??)
+---------------------------------------
+
+
+ x=(null)??("No value")
+
+console.log(x)
+
+b=25??(45);
+
+console.log(b)
+
+c=null??(100)
+console.log(c)
+---------------------------------
+7)Nullish Coalescing assignment Operator(??)
+-------------------------------------------------
+
+//JSON object
+var data={fname:'user1'}
+
+console.log(data);//{fname=user1}
+
+console.log(data.fname);//user1
+
+console.log(data.city);//undefined
+
+data.city??="chennai";
+console.log(data.city);
+
+console.log(data);
+***************************************************************
+
+Day-3
+
+Control statements
+---------------------
+1)Decision making statements
+2)looping statements
+3)jumping statements
+
+1)Decision making statements
+----------------------------------
+--->if
+--->if..else
+--->if..else..if
+--->nested if
+--->switch
+
+if
+---
+--->if condition is true,to print if block statements
+
+syntax
+---------
+if(condition)
+{
+  //statements
+}
+
+
+let age=15;
+if(age!=null && age>=18)
+{
+    console.log("You are Eligible for voting")
+}
+
+
+
+
+
+EX:
+---
+let age=45;
+if(age!=null && age>=18)
+{
+    console.log("You are Eligible for voting")
+console.log("Thank You!!")
+}
+console.log("Exit the Program")
+
+Output
+--------
+You are Eligible for voting
+Thank You!!
+Exit the Program
+-------------------------------------------------------------------
+if..else
+-----------
+if condition is true to print if block statements otherwise else to be printed
+
+syntax:
+---------
+if(condition)
+{
+  //statements
+}
+else
+{
+  //statements
+}
+
+EX:
+---
+let password=false
+
+if(password)
+{
+    console.log("You are logged In")
+}
+else{
+    console.log("Incorrect Password")
+}
+
+Output
+--------
+Incorrect Password
+
+
+EX:
+---
+let password=true
+
+if(password)
+{
+    console.log("You are logged In")
+}
+else{
+    console.log("Incorrect Password")
+}
+
+Output
+---------
+You are logged In
+-----------------------------------------------------
+if...else....if
+-----------------
+it check multiple condition in one program
+
+
+syntax:
+--------
+if(condition)
+{
+  //statements
+}
+else if(condition)
+{
+  //statements
+}
+else if(condition)
+{
+  //statements
+}
+else
+{
+  //statements
+}
+
+
+EX:
+---
+
+
+var number=10
+
+if(number<0)
+{
+    console.log(number,"is Negative")
+}
+
+else if(number>0)
+{
+    console.log(number,"is positive")
+}
+else{
+    console.log("Number is Zero")
+}
+
+
+Output
+--------
+10 is positive
+
+EX:
+---
+
+
+var number=-10
+
+if(number<0)
+{
+    console.log(number,"is Negative")
+}
+
+else if(number>0)
+{
+    console.log(number,"is positive")
+}
+else{
+    console.log("Number is Zero")
+}
+
+Output
+-----------
+-10 is negative
+
+
+
+var number=0
+
+if(number<0)
+{
+    console.log(number,"is Negative")
+}
+
+else if(number>0)
+{
+    console.log(number,"is positive")
+}
+else{
+    console.log("Number is Zero")
+}
+
+Output
+--------
+Number is Zero
+
+
+Exercise
+-----------
+91-100--->A Grade
+81-90---->B Grade
+71-80---->C Grade
+<=70------>D Grade
+
+Nested..if
+-----------
+syntax:
+-------
+if(condition)
+{
+   if(condition)
+   {
+     //statements
+   }
+   else
+   {
+    //statements
+  }
+}
+else
+{
+  //statements
+}
+
+
+age>=18,weight>=50--->Eligible For Blood Donate
+
+
+
+
+age=30,weight=60;
+
+if(age>=18)
+{
+    if(weight>=50)
+    {
+         console.log("Eligible For Blood Donate")
+    }
+    else{
+        console.log("Weight is less than 50")
+        console.log("Not Eligible for Blood Donate")
+    }
+}
+else{
+    console.log("Age is less than 18")
+    console.log("Not Eligible for Blood Donate")
+}
+
+EX:
+---
+
+
+age=30,weight=60;
+
+if(age>=18)
+{
+    if(weight>=50)
+    {
+         console.log("Eligible For Blood Donate")
+    }
+    else{
+        console.log("Weight is less than 50")
+        console.log("Not Eligible for Blood Donate")
+    }
+}
+else{
+    console.log("Age is less than 18")
+    console.log("Not Eligible for Blood Donate")
+}
+
+EX:
+---
+
+
+age=25,weight=40;
+
+if(age>=18)
+{
+    if(weight>=50)
+    {
+         console.log("Eligible For Blood Donate")
+    }
+    else{
+        console.log("Weight is less than 50")
+        console.log("Not Eligible for Blood Donate")
+    }
+}
+else{
+    console.log("Age is less than 18")
+    console.log("Not Eligible for Blood Donate")
+}
+
+
+check username and password is correct or not
+
+
+switch
+--------
+--->mutliway branch statements
+
+syntax:
+---------
+switch(choice)
+{
+   case choice1:
+         statements
+         break
+   case choice1:
+         statements
+         break
+   case choice1:
+         statements
+         break
+   default:
+      statements
+}
+
+EX:
+---
+
+choice=5
+
+switch(choice)
+{
+    case 1:
+        console.log("ONE")
+        break
+    case 2:
+        console.log("TWO")
+        break
+    case 3:
+        console.log("THREE")
+        break
+    case 4:
+        console.log("FOUR")
+        break
+    case 5:
+        console.log("FIVE")
+        break
+    default:
+        console.log("Invalid Option")
+}
+
+
+select Your course
+11.HTML
+22.CSS
+33.Javascript
+44.Jquery
+55.angular
+
+
+if..else
+----------
+1)number is even or odd
+2)number is equal or not
+3)largest of two number
+
+
+
+Rate Calculator
+
+< 3months--->5.8%
+3-6 months--->6.5%
+7-9 months--->6.8%
+>=10 months-->7%
+
+
+EX:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        h1{
+            color:blue
+        }
+        p{
+            font-size: 30px;
+            color:red;
+        }
+        #result
+        {
+            color:purple;
+            font-size: 50px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Rate Calculator</h1>
+
+    <p>Enter the Months<input type="text" id="input"></p>
+
+    <input type="submit" value="calculate" onclick="calculate1()">
+
+    <div id="result">
+     
+    </div>
+
+    <script>
+        function calculate1()
+        {
+            var months =Number(document.getElementById("input").value);//5
+            
+            let rate=0;
+
+            if(months<3)
+            {
+                rate=5.8;
+            }
+            else if(months>=3 && months<=6)
+            {
+                rate=6.5;
+            }
+            else if(months>=7 && months<=9)
+            {
+                rate=6.8;
+            }
+            else
+            {
+                rate=7;
+            }
+            result1=document.querySelector("#result");
+
+           result1.innerHTML="Your Rate is "+rate+"%";
+
+   
+        }
+     
+       
+    </script>
+    </center>
+</body>
+</html>
+
+--------------------------------------------------
+looping
+---------
+a=1
+(a<=10)--->
+
+types:
+------
+1)while
+2)do..while
+3)for
+
+
+I.while
+---------
+--->Entry check loop
+
+syntax:
+---------
+initialization
+while(condition)
+{
+  //coding
+  incre/decre
+}
+
+
+EX:
+---
+
+i=1;
+while(i<=5)//0<=5//0<=5
+{
+    console.log(i);//0//0
+    i=i+1
+}
+
+Ex
+---
+
+i=1;
+while(i<=5)//1<=5//2<=5//3<=5//4<=5//5<=5//6<=5-->false
+{
+    console.log("hello");//hello//hello//hello//hello//hello
+    i=i+1//i=1+1-->2//i=2+1-->3//i=3+1-->4//i=4+1-->5//i=5+1-->6
+}
+
+
+
+i=20
+
+while(i<=50)
+{
+    console.log(i)
+    i+=3;//i=i+3
+}
+
+EX:
+---
+
+i=100
+
+while(i>=75)
+{
+    console.log(i)
+    i--;//i=i-1,i==1
+}
+
+
+do..while
+---------
+--->exit check loop
+--->condition is atleast once executed
+
+syntax:
+---------
+initialization
+do
+{
+  //statements
+  incre/decr
+}while(condition);
+
+
+EX:
+----
+
+i=1
+do{
+    i=i+1;//i=1+1-->2
+    console.log(i);
+    
+}while(i<=10);
+-----------------------------------------------------------
+for loop
+----------
+syntax
+-------
+         1,5            2,6       4
+for(initialization;condition;incre/decre)
+{
+  //statements--->3
+}
+
+
+
+let a=10,b=20;
+
+for(a=1;a<=10;a++)
+//a=1;1<=10
+{
+   console.log(a);//1
+}
+--------------------------------------------
+let arr=[]
+
+for(i=0;i<=5;i++)
+{
+    arr.push(i);
+}
+console.log(arr)
+-----------------------------------------
+EX:
+---
+let arr=[]
+
+for(i=3;i<=8;i++)
+{
+    arr.push(i);
+}
+console.log(arr)
+
+console.log(arr[0])
+console.log(arr[2])
+
+
+-------------------------------------------------
+for of loop(or)for Each loop
+----------------------------
+
+let courses=["HTML","CSS","JS","JQ","Angular"]
+
+console.log(courses)
+
+for(let y of courses)
+{
+    console.log(y)
+}
+
+Ex:
+----
+
+let courses=["HTML","CSS","JS","JQ","Angular"]
+
+console.log(courses)
+
+for(i=0;i<courses.length;i++)
+//i=0;i<5
+//i=1;i<5
+{
+    console.log(courses[i])//course[0]//html
+}
+--------------------------------------------------------
+for in loop
+--------------
+--->It is used for JSON Object
+
+
+
+let  x={
+             fname:"user1",
+             age:34,
+             course:"JS"
+}
+
+console.log(x)
+
+for(let a in x)
+{
+    //console.log(a)
+
+    console.log(a+" : "+x[a])
+}
+---------------------------------------------------------
+tasks
+---------
+1)find sum and average of 1 to 10
+2)display multiplication table
+3)find cube 1 to 5
+-----------------------------------------------------
+Jumping statements
+--------------------
+1)break
+2)continue
+
+
+1)break
+----------
+--->It is used to stop the flow of a program
+
+syntax:
+--------
+break
+
+for(let i=1;i<=10;i++)
+{
+    if(i==5)
+    {
+        break;
+    }
+    console.log(i)
+}
+
+
+2)continue
+-----------
+it is used to skip the flow of a program
+
+
+syntax:
+----------
+continue
+
+EX:
+----
+for(let i=1;i<=10;i++)
+{
+    if(i==5||i==3||i==7||i==9)
+    {
+       continue;
+    }
+    console.log(i)
+}
+
+***************************************************************
+
+DAY-4
+
+Array
+------
+In c program
+--------------
+
+int a[]={12,3,5,7,8}
+
+Array is an object that can store multiple values at once
+
+let a=[100,200,300,400];
+console.log(a)
+
+console.table(a)
+
+
+EX:
+----
+
+
+let cities=["Chennai","Madhurai","Trichy"]
+
+console.log(cities)
+
+console.log(cities.length)
+
+console.log(cities[1])
+
+console.log(cities[4])
+
+
+
+EX:
+---
+
+
+let marks=[78,56,89,90,67]
+
+console.log(marks)
+
+console.log(marks[4])
+
+console.log(marks.length)
+
+console.log(marks[marks.length])//marks[5]--->unde
+
+console.log(marks[marks.length-1])
+-----------------------------------------------
+EX:Mixed Data's
+-------------------
+
+let arr=[5,6,8,'a',"abc",[5,6,8]]
+
+console.log(arr)
+console.log(arr[5])
+
+console.log(arr[5][0])
+
+
+-----------------------------------------------
+2D Array
+-------------
+
+
+s1=[[1,2,3],[4,5,6],[7,8,9]]
+
+console.log(s1)
+
+console.log(s1[0])
+
+console.log(s1[0][0])//
+
+---------------------------------------------
+Array Methods
+-----------------
+1)push
+---------
+
+--->add the elements to the end
+
+a=[1,2,3,4,5]
+console.log(a)
+a.push(100)
+console.log(a)
+a.push(400)
+console.log(a)
+---------------------------------------------
+2)pop
+---------
+--->remove the element from end and returns removed value
+
+
+a=[1,2,3,4,5]
+console.log(a)
+
+console.log(a.pop())
+console.log(a)
+----------------------------------
+3)shift
+---------
+--->remove the element from start and returns removed value
+
+a=[1,2,3,4,5]
+console.log(a)
+
+console.log(a.shift())
+console.log(a)
+
+console.log(a.shift())
+
+console.log(a)
+-------------------------------------------
+unshift
+----------
+--->Add the elements to the start of array and return a new length
+
+a=[1,2,3,4,5]
+console.log(a)//[1,2,3,4,5]
+
+console.log(a.unshift(100));//6(length)
+console.log(a)//[100,1,2,3,4,5]
+------------------------------------------
+delete
+--------
+
+
+a=[1,2,3,4,5]
+console.log(a)//[1,2,3,4,5]
+
+
+delete a[2]
+console.log(a)//[1, 2, empty, 4, 5]
+-----------------------------------------
+splice
+-----------
+-->add [and/or] remove elements from an Array
+
+
+syntax:
+------------
+var.splice(argu,argu,argu)
+
+
+EX:
+---
+
+
+a=[1,2,3,4,5]
+a.splice(2,1)//2-->index value,1--->no.of elements
+
+console.log(a)//[1,2,4,5]//1-->0,2-->1,
+
+a.splice(1,2)//2-->index,2--->no.elements
+
+console.log(a)//[1,2]
+
+x=['a','b','c','d','e']
+
+
+x.splice(0,1);
+console.log(x)
+
+console.log(x)//['b','c','d','e']
+x.splice(2,2)
+console.log(x)
+
+//replace
+
+x=['a','b','c','d','e']
+x.splice(1,1,'m')//replace+delete
+console.log(x)
+
+x=['a','b','c','d','e']
+x.splice(1,2,'m','n')
+console.log(x)
+
+//insert
+
+n=[100,200,300]
+n.splice(1,0,150)
+
+console.log(n)//[100,150,200,300]
+
+n.splice(2,0,175)
+console.log(n)
+--------------------------------------------------------
+slice
+--------
+--->It return a part of array values
+
+EX:
+---
+var.slice(startindex,endindex) 
+
+EX:
+----
+
+
+
+//0-->abc
+//1-->xyz
+//2-->cdf
+//3-->asd
+
+x=["abc","xyz","cdf","asd"]
+
+console.log(x)//["abc","xyz","cdf","asd"]
+
+console.log(x.slice(1,3));//xyz,cdf//1 to 2//start-->1,end-->3(3-1)-->2
+
+console.log(x)//["abc","xyz","cdf","asd"]
+
+console.log(x.slice(0,3))//["abc","xyz","cdf"]
+
+console.log(x.slice(1,300))//['xyz', 'cdf', 'asd']
+-------------------------------------------------------------------
+reverse
+----------
+syntax:
+--------
+var.reverse()
+
+EX:
+----
+
+
+
+//0-->abc
+//1-->xyz
+//2-->cdf
+//3-->asd
+
+x=["abc","xyz","cdf","asd"]
+
+console.log(x)//["abc","xyz","cdf","asd"]
+
+console.log(x.reverse())
+----------------------------------------------------
+
+
+
+//0-->abc
+//1-->xyz
+//2-->cdf
+//3-->asd
+
+x=["abc","xyz","cdf","asd"]
+
+console.log(x)//["abc","xyz","cdf","asd"]
+
+y=x.reverse()
+
+console.log(y)
+--------------------------------------------------
+join
+------
+--->it covert array to String
+
+syntax:
+---------
+var.join()
+
+//0-->abc
+//1-->xyz
+//2-->cdf
+//3-->asd
+
+x=["abc","xyz","cdf","asd"]
+
+console.log(x)//["abc","xyz","cdf","asd"]
+
+s1=x.join()
+
+console.log(s1)
+
+------------------------------------------------------
+split
+--------
+--->String to array convert
+
+x="a,b,c,d";
+
+console.log(x)//a,b,c,d
+
+y=x.split(",")
+
+console.log(y)
+----------------------------------------------------
+concat ,spread operator
+---------------------------
+
+a1=[10,20,30]
+b1=[90,100,129]
+
+x=[a1,b1]
+
+console.log(x)//[[10,20,30],[90,100,129]]
+
+y=a1.concat(b1)
+
+console.log(y)
+
+s1=[...a1,...b1]//using spread operator
+
+console.log(s1)
+
+-----------------------------------------------------------
+
+String
+--------
+------>sequence of characters(alphabets,digit,special characters)
+
+types:
+-------
+1)String literal
+2)String Object
+
+
+I.String literal
+-------------------
+syntax:
+--------
+var="value"
+
+
+2)String Object
+---------------
+var variable=new String("value")
+
+
+EX:
+----
+
+let a="javascript is a scripting Laguage"//String  literal
+console.log(a)
+
+let  x1=new String("clientside");//String Object
+console.log(x1)
+
+Method
+---------
+1)charAt
+2)concat
+3)indexof
+4)lastindexOf
+5)tolowercase
+6)touppercase
+7)slice
+8)substring
+9)substr
+10)replace
+11)length
+12)padEnd
+13)padStart
+14)search
+15)includes
+16)startswith
+17)endswith
+18)trim
+
+
+I.charAt
+---------
+---it return a character of the given index
+
+syntax:
+---------
+var.charAt(index)
+
+EX:
+----
+
+
+let a="javascript is a scripting Laguage"//String  literal
+console.log(a)
+
+
+
+console.log(a[0])
+
+console.log(a.charAt(5))//c
+
+console.log(a.charAt(10))//
+
+
+2)concat
+-----------
+
+
+
+let a="web "
+let b=" designing"
+
+console.log(a+b)
+
+console.log(a.concat(b))
+
+console.log(a.concat("site"))
+
+console.log(a+"100")
+
+
+3)indexof
+------------
+
+ let x="object oriented"
+
+ console.log(x.indexOf("o"))//0
+
+ console.log(x.indexOf("o",4))//7
+
+ console.log(x.indexOf('z'))//-1
+
+
+4)lastindexOf
+-------------
+
+ let x="object oriented"
+
+
+ console.log(x.lastIndexOf("e"))//13
+
+ console.log(x.lastIndexOf("e",10))//10
+
+ console.log(x.lastIndexOf("e",9))//3
+
+ console.log(x.lastIndexOf('a'))
+
+5)tolowercase
+----------------
+
+
+let x="JAVASCRIPT"
+
+console.log(x)
+
+console.log(x.toLowerCase())
+
+6)toUpperCase
+---------------
+
+
+let s1="library"
+
+console.log(s1)
+
+console.log(s1.toUpperCase())
+--------------------------------------------
+slice
+-------
+
+
+let n="library"
+
+console.log(n.slice(0))//library
+console.log(n.slice(2,4))//br
+
+console.log(n.slice(0,5))//libra
+
+console.log(n.slice(-1))//y
+
+console.log(n.slice(-2))//ry
+
+console.log(n.slice(-5))//brary
+
+
+
+8)substring
+---------------
+syntax:
+---------
+var.subString(start,end)
+
+EX:
+---
+
+let n="library"
+
+console.log(n.substring(0))
+
+console.log(n.slice(0))
+
+
+//           -2 -1
+//l i b r a  r    y
+
+let n="library"
+
+console.log(n.substring(0))
+
+console.log(n.slice(0))
+
+console.log(n.substring(-1,-5))//
+
+console.log(n.substring(-5,-1))
+
+console.log(n.slice(-5,-1))
+------------------------------------------------------
+substr
+--------
+var.substr(start,length)
+
+
+
+
+
+let s1="Web designing"
+
+console.log(s1.substr(4,7))//designi
+
+console.log(s1.substr(3,5))//
+
+console.log(s1.substring(4,7))//des(4 to 6)
+----------------------------------------------------
+replace
+----------
+syntax:
+-----------
+var.replace(oldchar,newchar)
+
+EX:
+---
+
+
+let x="javascript is a server side programming Language"
+
+console.log(x)
+
+console.log(x.replace("server","client"))
+
+console.log(x.replace("a","e"))
+
+console.log(x.replaceAll("a","e"))
+-----------------------------------------------------
+length
+----------
+
+
+let x="javascript is a server side programming Language"
+
+console.log(x)
+
+console.log(x.length)//48
+
+
+12)padEnd
+------------
+syntax:
+----------
+var.padEnd(length,"value")
+
+EX:
+---
+let bill="Rs.10"
+
+console.log(bill)
+console.log(bill.length)//5
+
+let bill1=bill.padEnd(9,'0');//7//RS.1000
+
+console.log(bill1)
+
+console.log(bill1.length)
+
+
+padStart
+-----------
+
+
+
+let bill="10"
+
+console.log(bill)
+console.log(bill.length)//5
+
+let bill1=bill.padStart(5,'RS.');//7//RS.10
+
+console.log(bill1)
+
+console.log(bill1.length)
+
+---------------------------------------------------------
+search
+--------
+
+--->it check whether a given string is present or not ,return result is indexvalue
+
+let s1="strive not to be a success"
+
+console.log(s1.search("not"))//7
+
+console.log(s1.search("fail"))//-1
+
+console.log(s1.search("s"))//0
+
+
+15)includes
+-------------
+--->it check whether a given string is present or not ,return result is true/false
+
+
+let s1="strive not to be a success"
+
+
+console.log(s1.includes("succes"))
+
+console.log(s1.includes("Strive"))
+
+startswith&endswith
+-----------------------
+
+
+let s1="strive not to be a success"
+
+
+console.log(s1.startsWith("strive"))
+
+console.log(s1.endsWith("success"))
+
+let s2="657676786"
+
+console.log(s2.endsWith("86"))
+
+console.log(s2.endsWith("78"))
+-----------------------------------------------
+trim
+--------
+
+
+let a="     String Methods      "
+console.log(a)
+console.log(a.trim())
+console.log(a.trimEnd())
+
+console.log(a.trimStart())
+
+***************************************************************
+
+Day-4
+
+Methods/Functions
+-------------------
+
+trim
+touppercase()
+tolowercase(),...
+
+
+"JAVASCRIPT"
+
+log()
+
+console.log()
+
+document.write()
+
+alert()
+
+
+for()
+while()
+
+console.log("hello")
+console.log("hello")
+console.log("hello")
+console.log("hello")
+
+if()
+switch()
+
+
+--->Function is a block of code that perform some specific tasks
+
+types:
+--------
+1)predefined Functions
+2)userdefined Functions
+
+1)predefined Functions
+--------------------------
+--->these Functions are already defined by javascript header
+
+2)userdefined Functions
+-------------------------
+--->these Functions are  created by user requirements
+
+syntax:
+---------
+function function_name(arg)
+{
+  //set of code
+}
+
+EX:
+---
+
+
+function SayHello()//creating a Function
+{
+    console.log("hello Javascript")
+}
+
+SayHello()//calling a Function
+SayHello()
+SayHello()
+
+
+EX:function Arguments
+-----------------------
+
+function isPostive(num)//num=4//num-->parameter
+{
+    if(num>0)//4>0
+    {
+        console.log("Number is Positive")
+    }
+    else{
+        console.log("number is Negative")
+    }
+}
+
+isPostive(4)//4--->Argument
+isPostive(-5)
+
+
+passing mutiple arguments and with return type
+-----------------------------------
+
+
+function findProduct(a,b)//a=12,b=3
+{
+    return a*b//return 12*3-->return 
+    //console.log(a*b)
+}
+res=findProduct(12,3)
+
+console.log("The Result is "+res)
+
+
+EX:
+---
+
+
+function findProduct(a,b)//a=12,b=3
+{
+    return a*b//return 12*3-->return 
+    //console.log(a*b)
+}
+
+
+console.log("The Result is "+findProduct(12,3))
+
+
+EX:
+---
+
+
+console.log(findProduct(5,3))//function hoisting
+
+function findProduct(a,b)//function decalration
+{
+    return a*b
+   
+}
+
+Default Argument
+------------------
+
+function Greet(fname)
+{
+    console.log("Hii",fname)
+}
+Greet("Ramu")
+Greet()//undefined
+
+
+EX:
+---
+
+function Greet(fname="there")
+{
+    console.log("Hii",fname)
+}
+Greet("Ramu")
+Greet()//there
+Greet("Somu")
+
+
+Recursive Function
+--------------------
+A Function called itself same function is Recursive Function
+
+
+EX:
+---
+
+
+n=5,fact=1
+for(i=1;i<=n;i++)
+//i=1;1<=5
+//i=2;2<=5
+{
+   fact=fact*i
+   //fact=1*1--->1
+   //fact=1*2-->2
+}
+console.log(fact)
+------------------------------------------
+//5!=5*4*3*2*1=120
+
+function factorial(n)
+{
+    if(n==1)
+    {
+        return 1
+    }
+    else{
+        return n*factorial(n-1)//Recursive Function
+    }
+}
+
+console.log(factorial(5))
+
+
+sum of 1 to 100
+------------------
+rules
+------
+--->without use loop
+--->Don't use formula
+----------------------------------------------------------
+function Expression
+--------------------
+
+a=100
+console.log(a)
+
+
+isEven=function(num)//function
+{
+    return num%2==0
+}
+
+console.log(isEven(6))
+
+
+EX:
+---
+
+
+
+isEven=function (num)
+{
+    if(num%2==0)
+    {
+        return "even"
+    }
+    else{
+        return "ODD"
+    }
+}
+
+console.log(isEven(5))
+console.log(isEven(44))
+
+Ex:
+------
+
+
+
+console.log(isEven(5))//function hoisting--->error
+isEven=function (num)
+{
+    if(num%2==0)
+    {
+        return "even"
+    }
+    else{
+        return "ODD"
+    }
+}
+--------------------------------------------------
+Passing Array values to the Function
+--------------------------------------
+
+arr=[23,4,7,4,2]
+
+arrayfunction=function(x)
+{
+   return x
+}
+
+console.log(arrayfunction(arr))
+
+
+EX:
+---
+arr=[23,4,7,4,2]
+
+function arryfunction(x)
+{
+    return x
+}
+console.log(arryfunction(arr))
+---------------------------------------------------
+Arrow Function
+-----------------
+
+functionname=(arg1,ar2,ar3,..)=>
+ {
+    //set of code
+}
+
+EX:
+---
+//Normal Function
+
+function volume(l,b,h)
+{
+    return l*b*h
+}
+
+console.log(volume(2,3,4))
+
+//function Expression
+let volume1=function(l,b,h)
+{
+   
+    console.log(l*b*h)
+
+}
+volume1(30,20,10)
+
+//Arrow function with arguments
+let volume2=(l,b,h) =>
+{
+    return l*b*h
+}
+console.log(volume2(1,2,3));
+
+///Arrow function without arguments
+let SayHello=()=>
+{
+    console.log("Helloo")
+}
+SayHello()
+
+
+
+//using Arrow function with single argument
+let display=num=>
+{
+    return num+10
+}
+console.log(display(4))//num=4
+
+//
+
+let volume=(l,b,h)=>
+{
+  return l*b*h;//return l*b*h
+}
+console.log(volume(3,4,5))//60
+---------------------------------------------------
+1)find area of circle
+2)sum of five suject marks
+3)swapping two values 
+
+a=10
+b=20
+
+
+a=20
+b=10
+
+c
+-------------------------------------------------
+callback function
+-------------------
+Function passed as a Argument to the another function
+
+
+function a(fname)
+{
+  console.log("hello ",fname)
+}
+
+
+
+function b(callback)
+{
+  callback("user1")
+  console.log(callback)
+}
+
+b(a)//
+
+
+EX:
+---
+
+
+function square(n)
+{
+  console.log(n*n)
+}
+
+function Res(z)
+{
+  z(45)
+}
+Res(square)
+---------------------------------------------
+variable aruguments
+-----------------------
+
+let prod=function(...args)//args=1,2,3,4
+{
+   result=1
+
+   for(let val of args)//args=1,2,3,4
+   {
+      result=result*val
+     // result=1*1--->1
+     //result=1*2-->2
+     //result=2*3--->6
+     //result=6*4-->24
+   }
+
+   return result;
+   //returm 24;
+}
+
+console.log(prod(1,2,3,4))
+------------------------------------------------------
+ForEach
+----------
+
+
+data=["Deepa","kavya","priya","Banu"]
+
+console.log(data)
+data.forEach(print)
+//data-->variable_name
+//ForEach()---->Default method
+//print--->function_name
+
+function print(items)
+
+{
+  console.log(items.toUpperCase())
+
+}
+
+OOPs
+-----
+--->Object Oriented Programming
+
+1)object
+2)class
+3)Inheritance
+4)polymorphism
+5)DataAbstraction
+6)Encapsulation
+
+1)object
+---------
+--->It is an real world Entity
+--->Object has two properties(state,behaviour)
+
+EX:
+---
+laptop
+
+state--->color,size,RAM
+
+behaviour--->browse,play games,project build,..
+
+How to create an Object in Js
+--------------------------------
+
+I.object literal
+------------------
+
+let items=
+{
+    //proprtyname:value
+     pname:"phone",
+     price:20000,
+     quanity:1
+}
+
+console.log(items)
+
+
+II.new keyword
+-------------------
+
+
+syntax:
+----------
+let  var=new Object();
+
+
+EX:
+----
+let item1=new Object();
+
+console.log(item1)//{}
+
+//objcetname.property=value
+
+item1.name="charger"
+item1.price=700
+item1.quanity=2
+
+console.log(item1)
+
+console.log(item1.name)//Accesing Single object
+
+//updating property value
+
+item1.price=1000
+
+console.log(item1)
+
+console.log(item1.price)//1000
+
+//add new item
+
+item1.retuable=true;
+console.log(item1)
+
+//use Square bracket
+
+//objectname["propertyname"])
+console.log(item1["quanity"])//2
+
+//console.log(item1.quanity)
+
+item1["quanity"]=3
+
+console.log(item1)
+
+-------------------------------------------------
+using square bracket in anotherway
+-------------------------------------
+
+//var variablename=propertyname
+
+let x='name'
+
+item1[x]='Adapter'
+
+//item1.x="battery"--->not working
+
+console.log(item1)
+-------------------------------------------
+one object inside another object
+-----------------------------------
+
+
+
+let items=
+{
+    //proprtyname:value
+     pname:"phone",
+     price:20000,
+     quanity:1,
+     dimesions:
+     {
+      length:10,
+      width:2.5,
+      height:3
+
+     }
+}
+console.log(items)
+
+console.log(items.dimesions)
+
+console.log(items.dimesions.length)
+
+
+console.log(items.dimesions["length"])
+
+console.log(items["dimesions"])
+--------------------------------------------------
+
+//add array values inside the object
+let items={
+            pname:"phone",
+            price:20000,
+            quanity:1,
+            categories:["electronic","Samsung"]
+}
+
+console.log(items)
+
+console.log(items.categories)
+
+console.log(items.categories[1])
+------------------------------------------------------
+how to create an function inside the object
+-------------------------------------------
+
+//add array values inside the object
+let items={
+             //key:value
+            pname:"phone",
+            price:20000,
+            quanity:1,
+            categories:["electronic","Samsung"],
+
+            buy:function()
+            {
+                console.log("I buy a product")
+            },
+
+            addtoList()
+            {
+                  console.log("Add a new Product")
+            }
+}
+
+console.log(items)
+
+console.log(items.categories)
+
+console.log(items.categories[1])
+
+items.buy()
+items.addtoList()
+
+//a=[1,2,4,5]
+-----------------------------------------------------
+Ex:
+----
+create user object ,adding a name id,company details into the objects
+
+--------------------------------------------------------------------
+
+
+
+let user=
+{
+      fname:"admin",
+      age:27,
+
+      login:function()
+      {
+        
+         console.log("hi ",user.fname)
+         console.log("You'r age value is ",user.age)
+      },
+      logout()
+      {
+        console.log("your logged out")
+      }
+}
+
+user.login()
+user.logout()
+
+
+EX:
+---
+
+
+
+let user=
+{
+      fname:"admin",
+      age:27,
+
+      login:function()
+      {
+        //console.log(user.fname)
+         console.log("hi ",this.fname)
+         console.log("You'r age value is ",user.age)
+      },
+      logout()
+      {
+        console.log("your logged out")
+      }
+}
+
+user.login()
+user.logout()
+----------------------------------------------------------
+class
+-------
+--->collection of an objects
+---->template of properties and methods
+
+
+syntax:
+---------
+class classname
+{
+   //set of code
+}
+
+
+EX:
+---
+
+
+class User
+{
+    
+    login(fname,password)
+    {
+         console.log("your name is "+fname)
+         console.log("password is "+password)
+    }
+    logout()
+    {
+        console.log("Thanks for your support!!!")
+    }
+}
+
+//how to create an object for the class
+
+//objectname=new classname()
+
+let u1=new User()
+
+//u1.login()
+
+u1.login("user1","123")
+u1.logout()
+
+//create another object the User class
+let u2=new User()
+u2.login("user2","456")
+u2.logout()
+
+
+
+
+class User
+{
+    constructor(uname,password)//Constructor(name,password--->local variablr)
+    //when constructor is called?Object creation
+    {
+         this.n=uname;//this.n=admin
+         this.p=password;//this.p=abc  
+    }
+    login()//method
+    {
+         console.log("your name is "+this.n)
+         console.log("password is "+this.p)
+    }
+}
+
+//how to create an object for the class
+
+//objectname=new classname()
+
+u1=new User("admin","abc")
+
+u1.login()
+--------------------------------------------
+
+class name--->ACCOUNT
+data---->account no,name
+
+methods--->transfer,chkbalance
+
+I.with constructor
+II.without constructor
+-------------------------------------------------------
+static variable,static method
+---------------------------------
+
+
+class User
+{
+    static numberofuser=0;
+    constructor(uname,password)
+    {
+          this.n=uname;//admin1
+          this.p=password;//this.p=xyz
+          //classname.variablename
+          User.numberofuser++;//0++;
+    }
+
+    login()
+    {
+         console.log("your name is "+this.n)
+         console.log("password is "+this.p)
+    }
+    logout()
+    {
+        console.log("Thanks for your support!!!")
+    }
+}
+
+
+let u1=new User("admin1","xyz")//object was created the constructor also called
+u1.login()
+u1.logout()
+
+let u2=new User("admin2","abc")
+u2.login()
+u2.logout()
+
+let u3=new User("admin3","abc1")
+u3.login()
+u3.logout()
+console.log("Number of users "+User.numberofuser)
+-------------------------------------------------------
+static method
+----------------
+
+
+class User
+{
+    static numberofuser=0;
+    constructor(uname,password)
+    {
+          this.n=uname;//admin1
+          this.p=password;//this.p=xyz
+          //classname.variablename
+          User.numberofuser++;//0++;
+    }
+
+    login()
+    {
+         console.log("your name is "+this.n)
+         console.log("password is "+this.p)
+    }
+    logout()
+    {
+        console.log("Thanks for your support!!!")
+    }
+    static TotalUser()
+    {
+        console.log("Total Number of user "+(User.numberofuser));
+    }
+}
+
+
+let u1=new User("admin1","xyz")//object was created the constructor also called
+u1.login()
+u1.logout()
+
+
+let u2=new User("admin2","abc")
+u2.login()
+u2.logout()
+
+let u3=new User("admin3","abc1")
+u3.login()
+u3.logout()
+
+User.TotalUser()
+----------------------------------------------------------------
+Inheritance
+------------
+Inheritance is a mechanism where a new class is derived from an existing class
+
+syntax
+---------
+class classname1
+{
+  //set of code
+}
+
+class classname2 extends classname1
+{
+  //set of code
+}
+
+
+EX:
+---
+
+
+class User
+{
+   
+    constructor(uname,password)
+    {
+          this.n=uname;//admin1
+          this.p=password;//this.p=xyz
+          //classname.variablename
+          User.numberofuser++;//0++;
+    }
+
+    login()
+    {
+         console.log("your name is "+this.n)
+         console.log("password is "+this.p)
+    }
+    logout()
+    {
+        console.log("Thanks for your support!!!")
+    }
+  
+}
+
+class PaidUser
+{
+    message()
+    {
+        console.log("You have 100GB Free Stroage")
+    }
+}
+
+
+let u1=new User("admin1","123")
+u1.login()
+u1.logout()
+
+
+let p1=new PaidUser()
+
+p1.message()
+
+
+EX:
+---
+
+
+class User//parent class,super class,base class
+{
+   
+    constructor(uname,password)
+    {
+          this.n=uname;//admin1
+          this.p=password;//this.p=xyz
+          //classname.variablename
+          User.numberofuser++;//0++;
+    }
+
+    login()
+    {
+         console.log("your name is "+this.n)
+         console.log("password is "+this.p)
+    }
+    logout()
+    {
+        console.log("Thanks for your support!!!")
+    }
+  
+}
+
+class PaidUser extends User//child class,derived class,sub class//new class
+{
+    message()
+    {
+        console.log("You have 100GB Free Stroage")
+    }
+}
+
+
+
+
+let p1=new PaidUser("user1","100")
+p1.login()
+
+p1.message()
+
+p1.logout()
+-------------------------------------------------------------------
+super keyword
+----------------
+
+
+class User//parent class,super class,base class
+{
+   
+    constructor(uname,password)
+    {
+          this.n=uname;//admin1
+          this.p=password;//this.p=xyz
+          //classname.variablename
+       
+    }
+
+  
+    logout()
+    {
+        console.log("Thanks for your support!!!")
+    }
+  
+}
+
+class PaidUser extends User//child class,derived class,sub class//new class
+{
+    constructor(uname,password)
+    {
+        super(uname,password)//
+        //this.n=uname
+        //this.p=password
+        this.storage=100;
+       
+    }
+    message()
+    {
+        console.log("username is "+this.n)
+        console.log("password is "+this.p)
+        console.log("You have  Free Stroage is "+this.storage)
+       
+    }
+ 
+}
+
+
+let p1=new PaidUser("user1","100")
+p1.message()
+p1.logout()
+-----------------------------------------------------------------
+this Vs super
+
+super--->it access the value parent class object
+
+this -->it access the value current class object
+--------------------------------------------------------------
+method overriding
+--------------------
+---->same method name and same Arguments
+
+
+class Student
+{
+   constructor(Sname,Sid)
+   {
+      this.sn=Sname;
+    this.id=Sid;
+   }
+    register()
+    {
+          console.log("Pls Resgister Your Details!!!")
+          console.log("Student Name is "+this.sn)
+          console.log("Student Id is "+this.id)
+    }
+
+    Studentinformation()
+    {
+        console.log("Your Details Successfully Registered")
+    }
+}
+
+class Student1 extends Student
+{
+    Studentinformation()//method overiding
+    {
+        console.log("Register Successfully")
+        console.log("Thanks For Your Registration")
+    }
+
+    logout()
+    {
+        console.log("Logout!!!")
+    }
+}
+
+let s1=new Student1("Ramya","ABC123")
+s1.register();
+s1.Studentinformation()
+s1.logout()
+
+**************************************************************
+
+Day-5
+
+Prototype
+----------
+Every object in javascript has a built -in properties is called as a prototype
+
+let arr=[12,3,4,56,8]
+
+console.log(arr)
+
+EX:
+----
+
+
+function User(name,age)
+{
+    this.name=name
+    this.age=age
+}
+
+  //function.protype.newfunction
+  User.prototype.login=function()
+    {
+        console.log("hi your name is "+this.name)
+        console.log("hi your age is "+this.age)
+        console.log("your logged in")
+    }
+
+
+let user1=new User("admin",30)
+
+user1.login()
+------------------------------------------------------------
+get & set method
+--------------------
+
+class Temperature
+{
+    constructor(temp)
+    {
+        this.temp=temp
+    }
+
+   
+   mytemp()
+   {
+       console.log(this.temp)
+   }
+}
+
+let temp1=new Temperature(25)
+temp1.mytemp()
+
+
+set Method
+------------
+
+class Temperature
+{
+    constructor(temp)
+    {
+        this._temp=temp//private variable
+        //this._temp=25
+    }
+
+   
+   get temp()//get--->default keyword
+   {
+      return this._temp
+   }
+
+   set temp(temp)
+   {
+    if(temp>100)
+    {
+        temp=100
+    }
+    this._temp=temp
+   }
+}
+
+let temp1=new Temperature(25)
+temp1.temp=150
+console.log(temp1.temp)//100
+------------------------------------------------
+Module
+----------
+
+A file containing js code that called as module
+
+EX:
+---
+one.js
+
+one-->module name
+
+
+EX:Car.js
+----------
+
+
+class Car
+{
+    drive()
+    {
+        console.log("Driving")
+    }
+}
+
+function fillGAS()
+{
+    console.log("Filling Gas")
+}
+
+function repair()
+{
+    console.log("Reparing")
+}
+
+export default Car
+
+
+EX:main.js
+-----------
+
+//import classname from fllename
+import Car from  './Car.js'
+
+let maruti=new Car()
+
+maruti.drive()
+
+
+EX:index.html
+--------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module" src="Main.js">
+        </script>
+</body>
+</html>
+--------------------------------------------------------------
+EX:Car.js
+-----------
+
+
+class Car
+{
+    drive()
+    {
+        console.log("Driving")
+    }
+}
+
+function fillGAS()
+{
+    console.log("Filling Gas")
+}
+
+function repair()
+{
+    console.log("Reparing")
+}
+
+export default Car
+export{fillGAS,repair}
+
+EX:main.js
+--------------
+
+//import classname from fllename
+import Car, { fillGAS, repair } from  './Car.js'
+
+let maruti=new Car()
+
+maruti.drive()
+
+fillGAS()
+repair()
+
+index.html
+-------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module" src="Main.js">
+        </script>
+</body>
+</html>
+-----------------------------------------------
+
+Template literals
+--------------------
+
+
+name="admin"
+console.log("The name is ",name)
+
+console.log("The name is"+name)
+
+
+ES---->it is used write a default structure format
+
+
+JS--->It follows as ES format
+
+Template literals intro in 2015 with ES6
+
+
+EX:
+----
+
+let firstname="Sachin"
+
+let lastname="Tendulakr"
+
+let city="chennai"
+
+console.log(firstname+" "+lastname+"lives in "+city)
+
+
+EX:Use backtick[`]
+--------------------
+
+let firstname="Sachin"
+
+let lastname="Tendulakr"
+
+let city="chennai"
+
+
+data=`${firstname}  ${lastname} lives in ${city}`
+
+console.log(data)
+--------------------------------------------------
+
+let msg=`have
+           a 
+            nice  day`
+
+console.log(msg)
+-----------------------------------------------
+
+let msg="cat's name is 'milo'"
+
+
+console.log(msg)//cat's name is 'milo'
+
+let msg1=`cat's name is "milo"`
+
+console.log(msg1)
+-------------------------------------------------------------
+JSON
+------
+--->Javascript Object Notation
+--->Language Independent
+--->DataHandling Process
+--->JSON is a Normal text file format
+
+
+EX:
+----
+
+const myobj={
+              name:"user1",
+              content:["Earn","Grow","Give"],
+
+              sub:function()
+              {
+                console.log("Thanks for creating Object")
+              }
+};
+
+console.log(myobj)
+
+console.log(myobj.name)//user1
+myobj.sub()
+
+console.log(typeof myobj)
+
+//object to JSON Object(String Conversion)
+
+const sendJSON=JSON.stringify(myobj)
+
+console.log(sendJSON)
+
+console.log(sendJSON.name)//undefined
+
+console.log(typeof sendJSON)
+
+//JSON(String file format) to object Conversion
+
+const receiveJSON=JSON.parse(sendJSON)
+
+console.log(receiveJSON)
+
+console.log(typeof receiveJSON)
+
+console.log(receiveJSON.content)
+-----------------------------------------------------------
+Exception Handling
+---------------------
+Exception Handling to handle the run time Errors
+
+
+EX:
+---
+x=100
+
+console.log(x)
+
+
+
+EX:
+---
+"use strict"
+
+x=100
+console.log(x)
+
+
+
+EX:
+---
+"use strict"
+
+let x=100
+
+console.log(x)
+
+
+types
+------
+1)Reference Error
+-------------------
+EX:
+---
+
+"use strict"
+
+ x=100
+
+console.log(x)
+
+2)syntax Error
+--------------
+
+Obj..create()
+
+3)Type Error
+--------------
+
+
+const name="JS"
+console.log(name)
+name="HTML"
+console.log(name)
+
+
+Exception handling keyword
+-----------------------------
+1)try
+2)catch
+3)finally
+
+
+try...catch
+----------------
+try
+{
+  //Exception
+}
+catch(object)
+{
+  //statement
+}
+
+
+EX:
+----
+
+"use strict"
+
+const makeError=()=>
+{
+    try{
+        const name="user1"
+        console.log(name)
+        name="user2"
+    }
+    catch(err)
+    {
+        console.log(err)
+    }
+};
+
+makeError()
+
+console.log("The Code is Exist")
+
+
+EX:(without exception)
+--------------------------
+
+"use strict"
+
+const makeError=()=>
+{
+    try{
+        const name="user1"
+        console.log(name)
+       
+    }
+    catch(err)
+    {
+        console.log(err)
+    }
+    
+};
+
+makeError()
+
+console.log("The Code is Exist")
+
+
+finally
+---------
+-->if exception occur or not the finally block automatically executed
+
+EX:
+----
+
+"use strict"
+
+const makeError=()=>
+{
+    try{
+        const name="user1"
+        console.log(name)
+    
+    }
+    catch(err)
+    {
+        console.log(err)
+    }
+    finally
+    {
+        var a=10,b=20;
+        if(a==b)
+        {
+             console.log("Numbers Are Equal")
+        }
+        else{
+            console.log("Not Equal")
+        }
+    }
+    
+};
+
+makeError()
+
+console.log("The Code is Exist")
+
+
+EX:
+---
+
+"use strict"
+
+const makeError=()=>
+{
+    try{
+        const name="user1"
+        console.log(name)
+        name="uer100"
+    }
+    catch(err)
+    {
+        console.log(err)
+    }
+    finally
+    {
+        var a=10,b=20;
+        if(a==b)
+        {
+             console.log("Numbers Are Equal")
+        }
+        else{
+            console.log("Not Equal")
+        }
+    }
+    
+};
+
+makeError()
+
+console.log("The Code is Exist")
+
+
+EX:
+---
+
+"use strict"
+
+const makeError=()=>
+{
+    try{
+        const name="user1"
+        console.log(name)
+        name="uer100"
+    }
+    catch(err)
+    {
+        console.error(err)
+        //console.warn(err)
+
+        //console.info(err)
+    }
+    finally
+    {
+        var a=10,b=20;
+        if(a==b)
+        {
+             console.log("Numbers Are Equal")
+        }
+        else{
+            console.log("Not Equal")
+        }
+    }
+    
+};
+
+makeError()
+
+console.log("The Code is Exist")
+------------------------------------------------
+***************************************************************
+
+Day-6
+
+DOM
+---
+Document --->.html
+
+object ---> keys and values
+
+Model ---> Structure
+
+
+--->It is a Standard for HTML  Elements
+
+
+Document -----
+              
+     html
+      |
+   ----------
+  |          |
+  head       body
+   |
+ -->title   --->p
+ -->meta    --->h
+ -->link    ---><a>
+
+
+Selector
+---------
+--->select Element ById
+--->select Elements ByName
+--->select Elements ByTagName
+--->select Elements byclassName
+--->select Element by css Selectors
+  (i)Query Selector
+  (ii)Query SelectorAll
+
+
+--->select Element ById(Square Of a Number)
+------------------------------------------
+
+syntax:
+---------
+document.getElementById("idname");//it return the tag
+
+document.getElementById("idname").value;//it return the value
+EX:
+----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Square of a Number</h1>
+    <p>Number =<input type="text" id="num"></p>
+    <button onclick="calc()">Click ON</button>
+
+
+    <script>
+        function calc()
+        {
+            var x=Number(document.getElementById("num").value);//5
+            // console.log(x*x)
+
+            alert("Square of a Number "+(x*x))
+        }
+        
+    </script>
+</body>
+</html>
+-------------------------------------------------------------
+--->select Elements ByName
+------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="radio" name="ff" value="First">1
+    <input type="radio" name="ff" value="Second">2
+    <input type="radio" name="ff" value="Three">3
+   <br><br>
+    <button onclick="clic()">ClickON</button>
+
+    <h3 id="output"></h3>
+
+ 
+    <script>
+       var ans =document.getElementById("output")
+
+       console.log(ans);// <h3 id="output"></h3>
+
+       function clic()
+       {
+      var x=document.getElementsByName("ff");
+      
+      //console.log(x)//[ff,ff,ff]
+
+      x.forEach((ff) =>
+      {
+        if(ff.checked)
+        {
+          ans.innerText=`${"Your Clicked "+ff.value}`;
+          //ans.innerHTML=`${"Your Clicked "+ff.value}`;
+        }
+      });
+    }
+
+
+      
+    </script>
+
+</body>
+
+
+</html>
+
+
+x=[12,3,4,67]
+
+
+forEach(x)
+{
+  
+}
+
+for(i=0;i<x.length;i++)
+{
+  console.log(x[i])
+}
+
+
+option
+--------
+
+Select Your Course?
+------------------------
+C
+C++
+Java
+HTML
+CSS
+JS
+
+Your Selected Course Name *****
+---------------------------------------------------------
+
+1)Adding Two values
+------------------------------------------------------------
+--->select Elements ByTagName
+-----------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading1</h1>
+    <p>Welcome to JS</p>
+    <h1>Heading2</h1>
+    <p>Learn JS From WebDevelopment</p>
+    <h6>Bye</h6>
+
+    <button onclick="clic()">CountTags</button>
+
+    <script>
+        var para=document.getElementsByTagName("p")
+
+        function clic()
+        {
+           alert("Total Count "+para.length)
+        }
+    </script>
+</body>
+</html>
+-------------------------------------------------------------
+EX:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading1</h1>
+    <p>Welcome to JS</p>
+    <h1>Heading2</h1>
+    <p>Learn JS From WebDevelopment</p>
+    <h6>Bye</h6>
+
+    <button>CountTags</button>
+
+    <script>
+        var btn=document.querySelector("button")
+        var para=document.getElementsByTagName("p")
+
+        btn.onclick=function()
+        {
+           alert("Total Count "+para.length)
+        }
+    </script>
+</body>
+</html>
+-----------------------------------------------------------
+(i)Query Selector
+-------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is Heading1</h1>
+   <p>...</p>
+    <script>
+        var a=document.querySelector("p");
+        
+        a.innerHTML="This is My Heading"
+        
+    </script>
+</body>
+</html>
+
+EX:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is Heading1</h1>
+   <p class="first">...</p>
+    <script>
+        var a=document.querySelector("h1");
+        //console.log(a)
+        a.innerHTML="This is My Heading"
+
+        var b=document.querySelector(".first");
+        b.innerHTML="This is My Paragraph"
+        b.style.backgroundColor="orange"
+    </script>
+</body>
+</html>
+---------------------------------------------------------
+QuerySelectorall
+----------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 class="One">This is Heading1</h1>
+   <h1 class="two">This is Heading2</h1>
+   <h1 class="One">This is Heading3</h1>
+   <h1 class="two">This is Heading4</h1>
+   <button>ClickMe</button>
+    <script>
+        var btn=document.querySelector("button");
+        
+        console.log(btn)
+
+        btn.onclick =function()
+        {
+            var x =document.querySelectorAll("h1");
+
+            console.log(x)
+
+            x[0].style.backgroundColor="red"
+            x[1].style.backgroundColor="yellow"
+        }
+        
+    </script>
+</body>
+</html>
+
+
+EX:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="One">This is Heading1</h1>
+   <h1 class="two">This is Heading2</h1>
+   <h1 id="One">This is Heading3</h1>
+   <h1 class="two">This is Heading4</h1>
+   <button>ClickMe</button>
+    <script>
+        var btn=document.querySelector("button");
+        
+        console.log(btn)
+
+        btn.onclick =function()
+        {
+            var x =document.querySelectorAll("#One");
+
+            console.log(x)
+
+            x[0].style.backgroundColor="red"
+            x[1].style.backgroundColor="red"
+        }
+        
+    </script>
+</body>
+</html>
+---------------------------------------------------------------
+--->select Elements byclassName
+----------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--button*4-->
+
+    <button class="black blue" onclick="blue()">Blue</button>
+    <button class="black green" onclick="Green()">Green</button>
+    <button class="black red" onclick="Red()">RED</button>
+    <button class="black" onclick="reset()">Reset</button>
+
+    <script>
+        var all=document.getElementsByClassName("black")
+     //   console.log(all)
+
+     function blue()
+     {
+        document.getElementsByClassName("blue")[0].style.backgroundColor="blue"
+         //console.log(x)
+     }
+     function Green()
+     {
+        document.getElementsByClassName("green")[0].style.backgroundColor="green"
+         //console.log(x)
+     }
+     function Red()
+     {
+        document.getElementsByClassName("red")[0].style.backgroundColor="red"
+         //console.log(x)
+     }
+
+     function reset()
+     {
+        for(i=0;i<all.length;i++)
+        //i=0;i<4
+        {
+            all[i].style.backgroundColor="black"
+            all[i].style.color="white"
+        }
+     }
+    </script>
+</body>
+</html>
+
+
+BOM
+----
+--->Browser Object Model
+--->It is used to interact to the browser
+
+Types:
+-------
+1)screen
+2)location
+3)history
+4)navigation
+
+1)screen
+-----------
+The screen object contains the information about the userscreen
+
+console.log(window.screen)
+
+console.log(window.screen.width)
+
+console.log(screen.height)
+
+2)location
+-----------
+console.log(window.location)
+
+console.log(location.host)
+
+
+window.setInterval(function()
+{
+    window.document.title="This is My new Title"
+},5000)
+-----------------------------------
+window.setInterval(function()
+{
+   location.href="http://www.google.com"
+},5000)
+
+
+EX:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learn BOM in Js</h1>
+    <script src="index.js">
+        </script>
+</body>
+</html>
+
+
+3)history
+----------
+
+console.log(window.history)
+
+console.log(history.length)
+
+function goback()
+{
+    window.location.assign("https://www.google.com")
+
+    window.history.forward()
+}
+
+EX:
+---
+
+console.log(window.history)
+
+console.log(history.length)
+
+function goback()
+{
+    window.location.assign("https://www.google.com")
+
+   // window.history.back()
+
+   window.history.forward()
+}
+-----------------------------------------------------
+navigation
+-----------
+
+console.log(navigator)
+
+console.log(navigator.appVersion)
+
+console.log(navigator.platform)
+
+console.log(navigator.webdriver)
+
+console.log(navigator.product)
+
+JS Events
+-----------
+--->The change in the state of an Object is known by event
+
+EX:Demo.js
+function btnClicked()
+{
+    console.log("Button is Clicked!!!")
+}
+
+onclick
+----------
+EX:index1.html
+----------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="btnClicked()">Click</button>
+    <script src="Demo.js">
+
+    </script>
+</body>
+</html>
+
+onmouseover
+------------
+EX:
+----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseover="btnClicked()">Click</button>
+    <script src="Demo.js">
+
+    </script>
+</body>
+</html>
+-----------------------------------------------------------
+onmouseout
+--------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseout="btnClicked()">Click</button>
+    <script src="Demo.js">
+
+    </script>
+</body>
+</html>
+
+
+EX:
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onmouseout="btnClicked()">This is Heading</h1>
+    <button >Click</button>
+    <script src="Demo.js">
+
+    </script>
+</body>
+</html>
+--------------------------------------------------------
+keyEvent
+---------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onkeypress="keyPress(event)">
+    <button onmouseout="btnClicked()">Click</button>
+    <script src="Demo.js">
+
+    </script>
+</body>
+</html>
+
+EX:
+---
+
+function keyPress(e)
+{
+    console.log(e)
+}
+---------------------------------------------------------
+doubleclick event
+-------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button ondblclick="eventHandler(event)">DoubleClick</button>
+    <script src="Demo.js">
+
+    </script>
+</body>
+</html>
+
+
+EX:
+---
+function eventHandler(e)
+{
+   console.log("What is this Event??",e.type);
+}
+----------------------------------------------
+onfocus
+---------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onfocus="eventHandler(event)">
+    <button ondblclick="eventHandler(event)">DoubleClick</button>
+    <script src="Demo.js">
+
+    </script>
+</body>
+</html>
+
+EX:
+---
+function eventHandler(e)
+{
+   console.log("What is this Event??",e.type);
+}
+------------------------------------------
+onblur
+--------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onblur="eventHandler(event)">
+    <button ondblclick="eventHandler(event)">DoubleClick</button>
+    <script src="Demo.js">
+
+    </script>
+</body>
+</html>
+
+EX:-
+------
+function eventHandler(e)
+{
+   console.log("What is this Event??",e.type);
+}
+------------------------------------------------------------
+onload
+---------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="eventHandler(event)">
+    <input onblur="eventHandler(event)">
+    <button ondblclick="eventHandler(event)">DoubleClick</button>
+    <script src="Demo.js">
+
+    </script>
+</body>
+</html>
+--------------------------------------------------------
+oncopy
+----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p oncopy="eventHandler(event)">copy me</p>
+  
+   
+    <script src="Demo.js">
+
+    </script>
+</body>
+</html>
+--------------------------------------
+EX:contextmenu
+------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p oncontextmenu="eventHandler(event)">copy me</p>
+  
+   
+    <script src="Demo.js">
+
+    </script>
+</body>
+</html>
+
+EX:onoffline
+---------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onoffline="eventHandler(event)">
+    <p>copy me</p>
+  
+   
+    <script src="Demo.js">
+
+    </script>
+</body>
+</html>
+-------------------------------------------------------------------
